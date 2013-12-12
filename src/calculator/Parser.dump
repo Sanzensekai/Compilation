@@ -1,0 +1,25 @@
+===== STDERR =====
+
+===== STDOUT =====
+
+===== Terminals =====
+[0]EOF [1]error [2]EOLN [3]CREATE_T [4]DESCRIBE 
+[5]START [6]FINISH [7]NAME [8]LABEL [9]DATE 
+[10]DESCRIPTION [11]UPLUS [12]UMINUS 
+
+===== Non terminals =====
+[0]list [1]instr [2]date [3]expr 
+
+===== Productions =====
+[0] list ::= 
+[1] $START ::= list EOF 
+[2] list ::= list instr EOLN 
+[3] instr ::= expr 
+[4] expr ::= CREATE_T NAME 
+[5] expr ::= DESCRIBE NAME DESCRIPTION 
+[6] expr ::= START NAME DATE 
+[7] expr ::= FINISH NAME DATE 
+[8] expr ::= NAME LABEL 
+===== Viable Prefix Recognizer =====
+null
+null

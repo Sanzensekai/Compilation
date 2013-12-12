@@ -1,0 +1,57 @@
+package calculator;
+
+import java.util.TreeMap;
+import java.util.Map;
+
+parser code {:
+    
+    public void report_error(String message, Object info) {
+        StringBuffer m = new StringBuffer("Error");
+		m.append (info.toString());
+        m.append(" : "+message);
+        System.err.println(m.toString());
+    }
+   
+    public void report_fatal_error(String message, Object info) {
+        report_error(message, info);
+        System.exit(1);
+    }
+
+	private Map<String, Integer> values = new TreeMap<String, Integer> ();
+
+	public void setValue (String name, int value) {
+		values.put(name, new Integer (value));
+	}
+	
+	public int getValue (String name) {
+		int value = 0;
+		if (values.containsKey(name))
+			value = values.get(name).intValue();
+		return value;
+	}
+
+:}
+
+terminal			EOLN;
+terminal			CREATE_T, DESCRIBE, START, FINISH, ;
+
+terminal String		NAME, LABEL, DATE, DESCRIPTION;
+terminal			UPLUS, UMINUS;
+   
+nonterminal 		list, instr;
+nonterminal			date;
+nonterminal Integer expr;
+
+list	::=	
+		|	list instr EOLN
+		;
+
+instr	::=	expr:e					{: System.out.println (e); :}
+		;
+
+expr	::=	CREATE_T NAME:n			{: RESULT = getFactory().createTask(n); :}
+		|	DESCRIBE NAME:n DESCRIPTION:de {: RESULT = getFactory().getTask(n).setDesc(de); :}
+		|	START	NAME:n DATE:da {: RESULT = getFactory().getTask(n).setStart(da); :}
+		|	FINISH	NAME:n DATE:da {: RESULT = getFactory().getTask(n).setFinish(da); :}
+		|	LABELLED NAME:n LABEL:l {: RESULT = getFactory().getTask(n).setFinish(da); :}
+		;
