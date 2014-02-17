@@ -1,4 +1,4 @@
-package calculator;
+package gantt;
 
 import java.util.TreeMap;
 import java.util.Map;
@@ -29,6 +29,11 @@ parser code {:
 			value = values.get(name).intValue();
 		return value;
 	}
+	
+	public java.io.File getThatFile()
+	{
+		return file;
+	}
 
 :}
 
@@ -36,7 +41,7 @@ terminal			EOLN;
 terminal			CREATE_T, DESCRIBE, START, FINISH, LABELLED;
 
 terminal String		NAME, LABEL, DATE, DESCRIPTION;
-terminal			UPLUS, UMINUS;
+//terminal			UPLUS, UMINUS;
    
 nonterminal 		list, instr;
 nonterminal			date;
@@ -49,9 +54,9 @@ list	::=
 instr	::=	expr:e					{: System.out.println (e); :}
 		;
 
-expr	::=	CREATE_T NAME:n			{: RESULT = getFactory().createTask(n); :}
-		|	DESCRIBE NAME:n DESCRIPTION:de {: RESULT = getFactory().getTask(n).setDesc(de); :}
-		|	START	NAME:n DATE:da {: RESULT = getFactory().getTask(n).setStart(da); :}
-		|	FINISH	NAME:n DATE:da {: RESULT = getFactory().getTask(n).setFinish(da); :}
-		|	LABELLED NAME:n LABEL:l {: RESULT = getFactory().getTask(n).setFinish(da); :}
+expr	::=	CREATE_T NAME:n			{: RESULT = getThatFile().createTask(n); :}
+		|	DESCRIBE NAME:n DESCRIPTION:de {: RESULT = getThatFile().setDescription(n,de); :}
+		|	START	NAME:n DATE:da {: RESULT = getThatFile().getStartingDate(n,da); :}
+		|	FINISH	NAME:n DATE:da {: RESULT = getThatFile().setFinishingDate(n,da); :}
+		|	LABELLED NAME:n LABEL:l {: RESULT = getThatFile().setLabel(n,da); :}
 		;
