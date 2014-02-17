@@ -1,0 +1,1851 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?metadataRepository version='1.1.0'?>
+<repository name='${p2.metadata.repo.name}' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1.0.0'>
+  <properties size='2'>
+    <property name='p2.compressed' value='false'/>
+    <property name='p2.timestamp' value='1271079256197'/>
+  </properties>
+  <units size='55'>
+    <unit id='java_cup.feature.feature.jar' version='1.2.2.201004031947'>
+      <properties size='3'>
+        <property name='org.eclipse.equinox.p2.name' value='java_cup feature'/>
+        <property name='org.eclipse.equinox.p2.description' value='This feature is an user interface for the Java_cup &#xA;framework for constructing compilers, and translators.&#xA;It consists of four plugins, one hold the original Java_cup&#xA;sources, the other three contain a compiler and&#xA;an editor for Java_cup grammar files.'/>
+        <property name='org.eclipse.equinox.p2.provider' value='michel.hassenforder@uha.fr'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='java_cup.feature.feature.jar' version='1.2.2.201004031947'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='java_cup.feature' version='1.2.2.201004031947'/>
+      </provides>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='org.eclipse.update.feature' id='java_cup.feature' version='1.2.2.201004031947'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+      <licenses size='1'>
+        <license uri='license.html' url='license.html'>
+          Unless otherwise stated, all Content made available by&#xA;Michel Hassenforder is provided to you under the terms and conditions&#xA;of the Common Public License Version 1.0 (CPL).&#xA;A copy of the CPL is provided with this Content and is also available&#xA;at http://www.eclipse.org/legal/cpl-v10.html.
+        </license>
+      </licenses>
+      <copyright>
+        Copyright (c) 2005-2007, Michel Hassenforder.
+      </copyright>
+    </unit>
+    <unit id='jflex.feature.feature.group' version='1.2.1' singleton='false'>
+      <update id='jflex.feature.feature.group' range='[0.0.0,1.2.1)' severity='0'/>
+      <properties size='4'>
+        <property name='org.eclipse.equinox.p2.name' value='jflex feature'/>
+        <property name='org.eclipse.equinox.p2.description' value='This feature is an user interface for the jflex &#xA;framework for constructing lexical analyser.&#xA;It consists of four plugins, one hold the original jflex&#xA;sources, the other three contain a compiler and&#xA;an editor for JFlex grammar files.'/>
+        <property name='org.eclipse.equinox.p2.provider' value='michel.hassenforder@uha.fr'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='jflex.feature.feature.group' version='1.2.1'/>
+      </provides>
+      <requires size='5'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='jflex.eclipse.core' range='[1.2.1,1.2.1]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='jflex.eclipse.doc' range='[1.2.1,1.2.1]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='jflex.eclipse.plugin' range='[1.2.1,1.2.1]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='jflex.eclipse.ui' range='[1.2.1,1.2.1]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='jflex.feature.feature.jar' range='[1.2.1,1.2.1]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <licenses size='1'>
+        <license uri='http://www.eclipse.org/legal/epl-v10.html' url='http://www.eclipse.org/legal/epl-v10.html'>
+          [Enter License Description here.]
+        </license>
+      </licenses>
+      <copyright>
+        Copyright (c) 2005-2007, Michel Hassenforder.
+      </copyright>
+    </unit>
+    <unit id='jflex.feature.feature.jar' version='1.2.1'>
+      <update id='jflex.feature.feature.jar' range='[0.0.0,1.2.1)' severity='0'/>
+      <properties size='3'>
+        <property name='org.eclipse.equinox.p2.name' value='jflex feature'/>
+        <property name='org.eclipse.equinox.p2.description' value='This feature is an user interface for the jflex &#xA;framework for constructing lexical analyser.&#xA;It consists of four plugins, one hold the original jflex&#xA;sources, the other three contain a compiler and&#xA;an editor for JFlex grammar files.'/>
+        <property name='org.eclipse.equinox.p2.provider' value='michel.hassenforder@uha.fr'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='jflex.feature.feature.jar' version='1.2.1'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='jflex.feature' version='1.2.1'/>
+      </provides>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='org.eclipse.update.feature' id='jflex.feature' version='1.2.1'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+      <licenses size='1'>
+        <license uri='http://www.eclipse.org/legal/epl-v10.html' url='http://www.eclipse.org/legal/epl-v10.html'>
+          [Enter License Description here.]
+        </license>
+      </licenses>
+      <copyright>
+        Copyright (c) 2005-2007, Michel Hassenforder.
+      </copyright>
+    </unit>
+    <unit id='jflex.eclipse.ui' version='1.2.0'>
+      <update id='jflex.eclipse.ui' range='[0.0.0,1.2.0)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='jflex UI Plug-in'/>
+        <property name='org.eclipse.equinox.p2.provider' value='michel.hassenforder@uha.fr'/>
+      </properties>
+      <provides size='10'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='jflex.eclipse.ui' version='1.2.0'/>
+        <provided namespace='osgi.bundle' name='jflex.eclipse.ui' version='1.2.0'/>
+        <provided namespace='java.package' name='jflex.eclipse.ui' version='0.0.0'/>
+        <provided namespace='java.package' name='jflex.eclipse.ui.compiler.decorators' version='0.0.0'/>
+        <provided namespace='java.package' name='jflex.eclipse.ui.compiler.popup.actions' version='0.0.0'/>
+        <provided namespace='java.package' name='jflex.eclipse.ui.compiler.properties' version='0.0.0'/>
+        <provided namespace='java.package' name='jflex.eclipse.ui.editor' version='0.0.0'/>
+        <provided namespace='java.package' name='jflex.eclipse.ui.newWizards' version='0.0.0'/>
+        <provided namespace='java.package' name='jflex.eclipse.ui.preferences' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='10'>
+        <required namespace='osgi.bundle' name='jflex.eclipse.core' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.core' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.editors' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.ide' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.workbench.texteditor' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jface.text' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='jflex.eclipse.ui' version='1.2.0'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-Name: jflex UI Plug-in&#xA;Bundle-ClassPath: .&#xA;Bundle-Version: 1.2.0&#xA;Eclipse-LazyStart: true&#xA;Bundle-Activator: jflex.eclipse.ui.JFlex_UIPlugin&#xA;Bundle-Vendor: michel.hassenforder@uha.fr&#xA;Require-Bundle: jflex.eclipse.core,org.eclipse.core.resources,org.eclipse.core.runtime,org.eclipse.jdt.core,org.eclipse.jdt.ui,org.eclipse.ui,org.eclipse.ui.editors,org.eclipse.ui.ide,org.eclipse.ui.workbench.texteditor,org.eclipse.jface.text&#xA;Export-Package: jflex.eclipse.ui,jflex.eclipse.ui.compiler.decorators,jflex.eclipse.ui.compiler.popup.actions,jflex.eclipse.ui.compiler.properties,jflex.eclipse.ui.editor,jflex.eclipse.ui.newWizards,jflex.eclipse.ui.preferences&#xA;Bundle-SymbolicName: jflex.eclipse.ui; singleton:=true&#xA;Manifest-Version: 1.0&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-ManifestVersion: 2&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.5&#xA;Bundle-Localization: plugin
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='java_cup.eclipse.doc' version='1.2.2.201004031947'>
+      <update id='java_cup.eclipse.doc' range='[0.0.0,1.2.2.201004031947)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='java_cup document Plug-in'/>
+        <property name='org.eclipse.equinox.p2.provider' value='michel.hassenforder@uha.fr'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='java_cup.eclipse.doc' version='1.2.2.201004031947'/>
+        <provided namespace='osgi.bundle' name='java_cup.eclipse.doc' version='1.2.2.201004031947'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='1'>
+        <required namespace='osgi.bundle' name='org.eclipse.help' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='java_cup.eclipse.doc' version='1.2.2.201004031947'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='2'>
+          <instruction key='manifest'>
+            Bundle-ManifestVersion: 2&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.5&#xA;Require-Bundle: org.eclipse.help&#xA;Manifest-Version: 1.0&#xA;Bundle-Version: 1.2.2.201004031947&#xA;Bundle-SymbolicName: java_cup.eclipse.doc; singleton:=true&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-Name: java_cup document Plug-in&#xA;Bundle-Vendor: michel.hassenforder@uha.fr&#xA;Eclipse-LazyStart: true
+          </instruction>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='java_cup.eclipse.doc' version='1.2.1'>
+      <update id='java_cup.eclipse.doc' range='[0.0.0,1.2.1)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='java_cup document Plug-in'/>
+        <property name='org.eclipse.equinox.p2.provider' value='michel.hassenforder@uha.fr'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='java_cup.eclipse.doc' version='1.2.1'/>
+        <provided namespace='osgi.bundle' name='java_cup.eclipse.doc' version='1.2.1'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='1'>
+        <required namespace='osgi.bundle' name='org.eclipse.help' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='java_cup.eclipse.doc' version='1.2.1'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='2'>
+          <instruction key='manifest'>
+            Bundle-ManifestVersion: 2&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.5&#xA;Require-Bundle: org.eclipse.help&#xA;Manifest-Version: 1.0&#xA;Bundle-Version: 1.2.1&#xA;Bundle-SymbolicName: java_cup.eclipse.doc; singleton:=true&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-Name: java_cup document Plug-in&#xA;Bundle-Vendor: michel.hassenforder@uha.fr&#xA;Eclipse-LazyStart: true
+          </instruction>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='java_cup.eclipse.ui' version='1.2.2.201004031947'>
+      <update id='java_cup.eclipse.ui' range='[0.0.0,1.2.2.201004031947)' severity='0'/>
+      <properties size='3'>
+        <property name='org.eclipse.equinox.p2.name' value='java_cup UI Plug-in'/>
+        <property name='org.eclipse.equinox.p2.provider' value='michel.hassenforder@uha.fr'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+      </properties>
+      <provides size='10'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='java_cup.eclipse.ui' version='1.2.2.201004031947'/>
+        <provided namespace='osgi.bundle' name='java_cup.eclipse.ui' version='1.2.2.201004031947'/>
+        <provided namespace='java.package' name='java_cup.eclipse.ui' version='0.0.0'/>
+        <provided namespace='java.package' name='java_cup.eclipse.ui.compiler.decorators' version='0.0.0'/>
+        <provided namespace='java.package' name='java_cup.eclipse.ui.compiler.popup.actions' version='0.0.0'/>
+        <provided namespace='java.package' name='java_cup.eclipse.ui.compiler.properties' version='0.0.0'/>
+        <provided namespace='java.package' name='java_cup.eclipse.ui.editor' version='0.0.0'/>
+        <provided namespace='java.package' name='java_cup.eclipse.ui.newWizards' version='0.0.0'/>
+        <provided namespace='java.package' name='java_cup.eclipse.ui.preferences' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='10'>
+        <required namespace='osgi.bundle' name='java_cup.eclipse.core' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.core' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.editors' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.ide' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.workbench.texteditor' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jface.text' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='java_cup.eclipse.ui' version='1.2.2.201004031947'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-Name: java_cup UI Plug-in&#xA;Bundle-ClassPath: .&#xA;Bundle-Version: 1.2.2.201004031947&#xA;Eclipse-LazyStart: true&#xA;Bundle-Activator: java_cup.eclipse.ui.Java_Cup_UIPlugin&#xA;Bundle-Vendor: michel.hassenforder@uha.fr&#xA;Require-Bundle: java_cup.eclipse.core,org.eclipse.core.resources,org.eclipse.core.runtime,org.eclipse.jdt.core,org.eclipse.jdt.ui,org.eclipse.ui,org.eclipse.ui.editors,org.eclipse.ui.ide,org.eclipse.ui.workbench.texteditor,org.eclipse.jface.text&#xA;Export-Package: java_cup.eclipse.ui,java_cup.eclipse.ui.compiler.decorators,java_cup.eclipse.ui.compiler.popup.actions,java_cup.eclipse.ui.compiler.properties,java_cup.eclipse.ui.editor,java_cup.eclipse.ui.newWizards,java_cup.eclipse.ui.preferences&#xA;Bundle-SymbolicName: java_cup.eclipse.ui; singleton:=true&#xA;Manifest-Version: 1.0&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-ManifestVersion: 2&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.5&#xA;Bundle-Localization: plugin
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='compiler compiler' version='0.0.0.20100412153413'>
+      <properties size='3'>
+        <property name='org.eclipse.equinox.p2.name' value='jcup &amp; jflex'/>
+        <property name='org.eclipse.equinox.p2.description' value='Compiler compiler generator'/>
+        <property name='org.eclipse.equinox.p2.type.category' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='compiler compiler' version='0.0.0'/>
+      </provides>
+      <requires size='2'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='jflex.feature.feature.group' range='[1.2.2.201004121533,1.2.2.201004121533]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='java_cup.feature.feature.group' range='[1.2.2.201004121533,1.2.2.201004121533]'/>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+    </unit>
+    <unit id='java_cup.eclipse.core' version='1.2.2.201004031947'>
+      <update id='java_cup.eclipse.core' range='[0.0.0,1.2.2.201004031947)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='java_cup core Plug-in'/>
+        <property name='org.eclipse.equinox.p2.provider' value='michel.hassenforder@uha.fr'/>
+      </properties>
+      <provides size='6'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='java_cup.eclipse.core' version='1.2.2.201004031947'/>
+        <provided namespace='osgi.bundle' name='java_cup.eclipse.core' version='1.2.2.201004031947'/>
+        <provided namespace='java.package' name='java_cup.eclipse.core' version='0.0.0'/>
+        <provided namespace='java.package' name='java_cup.eclipse.core.builder' version='0.0.0'/>
+        <provided namespace='java.package' name='java_cup.eclipse.core.internal' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='6'>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.team.core' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.core' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='java_cup.eclipse.plugin' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='java_cup.eclipse.core' version='1.2.2.201004031947'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-RequiredExecutionEnvironment: J2SE-1.5&#xA;Bundle-Name: java_cup core Plug-in&#xA;Bundle-Activator: java_cup.eclipse.core.Java_Cup_CorePlugin&#xA;Manifest-Version: 1.0&#xA;Bundle-Vendor: michel.hassenforder@uha.fr&#xA;Bundle-ClassPath: .&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-SymbolicName: java_cup.eclipse.core; singleton:=true&#xA;Bundle-ManifestVersion: 2&#xA;Eclipse-LazyStart: true&#xA;Bundle-Version: 1.2.2.201004031947&#xA;Export-Package: java_cup.eclipse.core,java_cup.eclipse.core.builder,java_cup.eclipse.core.internal&#xA;Require-Bundle: org.eclipse.core.runtime,org.eclipse.core.resources,org.eclipse.team.core,org.eclipse.jdt.core,org.eclipse.ui,java_cup.eclipse.plugin
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='java_cup.eclipse.core' version='1.2.0'>
+      <update id='java_cup.eclipse.core' range='[0.0.0,1.2.0)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='java_cup core Plug-in'/>
+        <property name='org.eclipse.equinox.p2.provider' value='michel.hassenforder@uha.fr'/>
+      </properties>
+      <provides size='6'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='java_cup.eclipse.core' version='1.2.0'/>
+        <provided namespace='osgi.bundle' name='java_cup.eclipse.core' version='1.2.0'/>
+        <provided namespace='java.package' name='java_cup.eclipse.core' version='0.0.0'/>
+        <provided namespace='java.package' name='java_cup.eclipse.core.builder' version='0.0.0'/>
+        <provided namespace='java.package' name='java_cup.eclipse.core.internal' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='6'>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.team.core' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.core' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='java_cup.eclipse.plugin' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='java_cup.eclipse.core' version='1.2.0'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-RequiredExecutionEnvironment: J2SE-1.5&#xA;Bundle-Name: java_cup core Plug-in&#xA;Bundle-Activator: java_cup.eclipse.core.Java_Cup_CorePlugin&#xA;Manifest-Version: 1.0&#xA;Bundle-Vendor: michel.hassenforder@uha.fr&#xA;Bundle-ClassPath: .&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-SymbolicName: java_cup.eclipse.core; singleton:=true&#xA;Bundle-ManifestVersion: 2&#xA;Eclipse-LazyStart: true&#xA;Bundle-Version: 1.2.0&#xA;Export-Package: java_cup.eclipse.core,java_cup.eclipse.core.builder,java_cup.eclipse.core.internal&#xA;Require-Bundle: org.eclipse.core.runtime,org.eclipse.core.resources,org.eclipse.team.core,org.eclipse.jdt.core,org.eclipse.ui,java_cup.eclipse.plugin
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='jflex.eclipse.core' version='1.2.2.201004031947'>
+      <update id='jflex.eclipse.core' range='[0.0.0,1.2.2.201004031947)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='jflex core Plug-in'/>
+        <property name='org.eclipse.equinox.p2.provider' value='michel.hassenforder@uha.fr'/>
+      </properties>
+      <provides size='6'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='jflex.eclipse.core' version='1.2.2.201004031947'/>
+        <provided namespace='osgi.bundle' name='jflex.eclipse.core' version='1.2.2.201004031947'/>
+        <provided namespace='java.package' name='jflex.eclipse.core' version='0.0.0'/>
+        <provided namespace='java.package' name='jflex.eclipse.core.builder' version='0.0.0'/>
+        <provided namespace='java.package' name='jflex.eclipse.core.internal' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='6'>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.team.core' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.core' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='jflex.eclipse.plugin' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='jflex.eclipse.core' version='1.2.2.201004031947'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-RequiredExecutionEnvironment: J2SE-1.5&#xA;Bundle-Name: jflex core Plug-in&#xA;Bundle-Activator: jflex.eclipse.core.JFlex_CorePlugin&#xA;Manifest-Version: 1.0&#xA;Bundle-Vendor: michel.hassenforder@uha.fr&#xA;Bundle-ClassPath: .&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-SymbolicName: jflex.eclipse.core; singleton:=true&#xA;Bundle-ManifestVersion: 2&#xA;Eclipse-LazyStart: true&#xA;Bundle-Version: 1.2.2.201004031947&#xA;Export-Package: jflex.eclipse.core,jflex.eclipse.core.builder,jflex.eclipse.core.internal&#xA;Require-Bundle: org.eclipse.core.runtime,org.eclipse.core.resources,org.eclipse.team.core,org.eclipse.jdt.core,org.eclipse.ui,jflex.eclipse.plugin
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='tooling.source.default' version='1.0.0' singleton='false'>
+      <hostRequirements size='1'>
+        <required namespace='org.eclipse.equinox.p2.eclipse.type' name='source' range='0.0.0' optional='true' multiple='true' greedy='false'/>
+      </hostRequirements>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.type.fragment' value='true'/>
+      </properties>
+      <provides size='2'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='tooling.source.default' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.flavor' name='tooling' version='1.0.0'/>
+      </provides>
+      <requires size='1'>
+        <required namespace='org.eclipse.equinox.p2.eclipse.type' name='source' range='0.0.0' optional='true' multiple='true' greedy='false'/>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='2'>
+          <instruction key='install'>
+            addSourceBundle(bundle:${artifact})
+          </instruction>
+          <instruction key='uninstall'>
+            removeSourceBundle(bundle:${artifact})
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='jflex.eclipse.plugin' version='1.2.0' singleton='false'>
+      <update id='jflex.eclipse.plugin' range='[0.0.0,1.2.0)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='JFlex 1.4.2 Plug-in'/>
+        <property name='org.eclipse.equinox.p2.provider' value='michel.hassenforder@uha.fr'/>
+      </properties>
+      <provides size='5'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='jflex.eclipse.plugin' version='1.2.0'/>
+        <provided namespace='osgi.bundle' name='jflex.eclipse.plugin' version='1.2.0'/>
+        <provided namespace='java.package' name='JFlex' version='0.0.0'/>
+        <provided namespace='java.package' name='java_cup.runtime' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='jflex.eclipse.plugin' version='1.2.0'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-Vendor: michel.hassenforder@uha.fr&#xA;Bundle-ManifestVersion: 2&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.5&#xA;Bundle-ClassPath: jflex.jar&#xA;Bundle-Name: JFlex 1.4.2 Plug-in&#xA;Bundle-ActivationPolicy: lazy&#xA;Manifest-Version: 1.0&#xA;Bundle-SymbolicName: jflex.eclipse.plugin&#xA;Bundle-Version: 1.2.0&#xA;Eclipse-LazyStart: true&#xA;Export-Package: JFlex,java_cup.runtime
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='java_cup.eclipse.doc' version='1.2.0'>
+      <update id='java_cup.eclipse.doc' range='[0.0.0,1.2.0)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='java_cup document Plug-in'/>
+        <property name='org.eclipse.equinox.p2.provider' value='michel.hassenforder@uha.fr'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='java_cup.eclipse.doc' version='1.2.0'/>
+        <provided namespace='osgi.bundle' name='java_cup.eclipse.doc' version='1.2.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='1'>
+        <required namespace='osgi.bundle' name='org.eclipse.help' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='java_cup.eclipse.doc' version='1.2.0'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='2'>
+          <instruction key='manifest'>
+            Bundle-ManifestVersion: 2&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.5&#xA;Require-Bundle: org.eclipse.help&#xA;Manifest-Version: 1.0&#xA;Bundle-Version: 1.2.0&#xA;Bundle-SymbolicName: java_cup.eclipse.doc; singleton:=true&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-Name: java_cup document Plug-in&#xA;Bundle-Vendor: michel.hassenforder@uha.fr&#xA;Eclipse-LazyStart: true
+          </instruction>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='jflex.feature.feature.group' version='1.2.2.201004031947' singleton='false'>
+      <update id='jflex.feature.feature.group' range='[0.0.0,1.2.2.201004031947)' severity='0'/>
+      <properties size='4'>
+        <property name='org.eclipse.equinox.p2.name' value='jflex feature'/>
+        <property name='org.eclipse.equinox.p2.description' value='This feature is an user interface for the jflex &#xA;framework for constructing lexical analyser.&#xA;It consists of four plugins, one hold the original jflex&#xA;sources, the other three contain a compiler and&#xA;an editor for JFlex grammar files.'/>
+        <property name='org.eclipse.equinox.p2.provider' value='michel.hassenforder@uha.fr'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='jflex.feature.feature.group' version='1.2.2.201004031947'/>
+      </provides>
+      <requires size='5'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='jflex.eclipse.core' range='[1.2.2.201004031947,1.2.2.201004031947]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='jflex.eclipse.doc' range='[1.2.2.201004031947,1.2.2.201004031947]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='jflex.eclipse.plugin' range='[1.2.2.201004031947,1.2.2.201004031947]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='jflex.eclipse.ui' range='[1.2.2.201004031947,1.2.2.201004031947]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='jflex.feature.feature.jar' range='[1.2.2.201004031947,1.2.2.201004031947]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <licenses size='1'>
+        <license uri='http://www.eclipse.org/legal/epl-v10.html' url='http://www.eclipse.org/legal/epl-v10.html'>
+          [Enter License Description here.]
+        </license>
+      </licenses>
+      <copyright>
+        Copyright (c) 2005-2007, Michel Hassenforder.
+      </copyright>
+    </unit>
+    <unit id='java_cup.eclipse.doc' version='1.2.2.201004121533'>
+      <update id='java_cup.eclipse.doc' range='[0.0.0,1.2.2.201004121533)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='java_cup document Plug-in'/>
+        <property name='org.eclipse.equinox.p2.provider' value='michel.hassenforder@uha.fr'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='java_cup.eclipse.doc' version='1.2.2.201004121533'/>
+        <provided namespace='osgi.bundle' name='java_cup.eclipse.doc' version='1.2.2.201004121533'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='1'>
+        <required namespace='osgi.bundle' name='org.eclipse.help' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='java_cup.eclipse.doc' version='1.2.2.201004121533'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='2'>
+          <instruction key='manifest'>
+            Bundle-ManifestVersion: 2&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.5&#xA;Require-Bundle: org.eclipse.help&#xA;Manifest-Version: 1.0&#xA;Bundle-Version: 1.2.2.201004121533&#xA;Bundle-SymbolicName: java_cup.eclipse.doc; singleton:=true&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-Name: java_cup document Plug-in&#xA;Bundle-Vendor: michel.hassenforder@uha.fr&#xA;Eclipse-LazyStart: true
+          </instruction>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='java_cup.feature.feature.jar' version='1.2.0'>
+      <update id='java_cup.feature.feature.jar' range='[0.0.0,1.2.0)' severity='0'/>
+      <properties size='3'>
+        <property name='org.eclipse.equinox.p2.name' value='java_cup feature'/>
+        <property name='org.eclipse.equinox.p2.description' value='This feature is an user interface for the Java_cup &#xA;framework for constructing compilers, and translators.&#xA;It consists of four plugins, one hold the original Java_cup&#xA;sources, the other three contain a compiler and&#xA;an editor for Java_cup grammar files.'/>
+        <property name='org.eclipse.equinox.p2.provider' value='michel.hassenforder@uha.fr'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='java_cup.feature.feature.jar' version='1.2.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='java_cup.feature' version='1.2.0'/>
+      </provides>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='org.eclipse.update.feature' id='java_cup.feature' version='1.2.0'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+      <licenses size='1'>
+        <license>
+          Unless otherwise stated, all Content made available by&#xA;Michel Hassenforder is provided to you under the terms and conditions&#xA;of the Common Public License Version 1.0 (CPL).&#xA;A copy of the CPL is provided with this Content and is also available&#xA;at http://www.eclipse.org/legal/cpl-v10.html.
+        </license>
+      </licenses>
+      <copyright>
+        Copyright (c) 2005-2007, Michel Hassenforder.
+      </copyright>
+    </unit>
+    <unit id='java_cup.eclipse.plugin' version='1.2.1' singleton='false'>
+      <update id='java_cup.eclipse.plugin' range='[0.0.0,1.2.1)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='java_cup V10M Plugin'/>
+        <property name='org.eclipse.equinox.p2.provider' value='michel.hassenforder@uha.fr'/>
+      </properties>
+      <provides size='6'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='java_cup.eclipse.plugin' version='1.2.1'/>
+        <provided namespace='osgi.bundle' name='java_cup.eclipse.plugin' version='1.2.1'/>
+        <provided namespace='java.package' name='.' version='0.0.0'/>
+        <provided namespace='java.package' name='java_cup' version='0.0.0'/>
+        <provided namespace='java.package' name='java_cup.runtime' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='java_cup.eclipse.plugin' version='1.2.1'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-Vendor: michel.hassenforder@uha.fr&#xA;Bundle-ManifestVersion: 2&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.5&#xA;Bundle-ClassPath: java_cup.jar,java_cup.runtime.jar&#xA;Bundle-Name: java_cup V10M Plugin&#xA;Bundle-ActivationPolicy: lazy&#xA;Manifest-Version: 1.0&#xA;Bundle-SymbolicName: java_cup.eclipse.plugin&#xA;Bundle-Version: 1.2.1&#xA;Eclipse-LazyStart: true&#xA;Export-Package: .,java_cup,java_cup.runtime
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='jflex.eclipse.core' version='1.2.2.201004121533'>
+      <update id='jflex.eclipse.core' range='[0.0.0,1.2.2.201004121533)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='jflex core Plug-in'/>
+        <property name='org.eclipse.equinox.p2.provider' value='michel.hassenforder@uha.fr'/>
+      </properties>
+      <provides size='6'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='jflex.eclipse.core' version='1.2.2.201004121533'/>
+        <provided namespace='osgi.bundle' name='jflex.eclipse.core' version='1.2.2.201004121533'/>
+        <provided namespace='java.package' name='jflex.eclipse.core' version='0.0.0'/>
+        <provided namespace='java.package' name='jflex.eclipse.core.builder' version='0.0.0'/>
+        <provided namespace='java.package' name='jflex.eclipse.core.internal' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='6'>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.team.core' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.core' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='jflex.eclipse.plugin' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='jflex.eclipse.core' version='1.2.2.201004121533'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-RequiredExecutionEnvironment: J2SE-1.5&#xA;Bundle-Name: jflex core Plug-in&#xA;Bundle-Activator: jflex.eclipse.core.JFlex_CorePlugin&#xA;Manifest-Version: 1.0&#xA;Bundle-Vendor: michel.hassenforder@uha.fr&#xA;Bundle-ClassPath: .&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-SymbolicName: jflex.eclipse.core; singleton:=true&#xA;Bundle-ManifestVersion: 2&#xA;Eclipse-LazyStart: true&#xA;Bundle-Version: 1.2.2.201004121533&#xA;Export-Package: jflex.eclipse.core,jflex.eclipse.core.builder,jflex.eclipse.core.internal&#xA;Require-Bundle: org.eclipse.core.runtime,org.eclipse.core.resources,org.eclipse.team.core,org.eclipse.jdt.core,org.eclipse.ui,jflex.eclipse.plugin
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='jflex.feature.feature.group' version='1.2.2.201004121533' singleton='false'>
+      <update id='jflex.feature.feature.group' range='[0.0.0,1.2.2.201004121533)' severity='0'/>
+      <properties size='4'>
+        <property name='org.eclipse.equinox.p2.name' value='jflex feature'/>
+        <property name='org.eclipse.equinox.p2.description' value='This feature is an user interface for the jflex &#xA;framework for constructing lexical analyser.&#xA;It consists of four plugins, one hold the original jflex&#xA;sources, the other three contain a compiler and&#xA;an editor for JFlex grammar files.'/>
+        <property name='org.eclipse.equinox.p2.provider' value='michel.hassenforder@uha.fr'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='jflex.feature.feature.group' version='1.2.2.201004121533'/>
+      </provides>
+      <requires size='5'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='jflex.eclipse.core' range='[1.2.2.201004121533,1.2.2.201004121533]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='jflex.eclipse.doc' range='[1.2.2.201004121533,1.2.2.201004121533]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='jflex.eclipse.plugin' range='[1.2.2.201004121533,1.2.2.201004121533]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='jflex.eclipse.ui' range='[1.2.2.201004121533,1.2.2.201004121533]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='jflex.feature.feature.jar' range='[1.2.2.201004121533,1.2.2.201004121533]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <licenses size='1'>
+        <license uri='http://www.eclipse.org/legal/epl-v10.html' url='http://www.eclipse.org/legal/epl-v10.html'>
+          [Enter License Description here.]
+        </license>
+      </licenses>
+      <copyright>
+        Copyright (c) 2005-2007, Michel Hassenforder.
+      </copyright>
+    </unit>
+    <unit id='tooling.osgi.bundle.default' version='1.0.0' singleton='false'>
+      <hostRequirements size='1'>
+        <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='0.0.0' multiple='true' greedy='false'/>
+      </hostRequirements>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.type.fragment' value='true'/>
+      </properties>
+      <provides size='2'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='tooling.osgi.bundle.default' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.flavor' name='tooling' version='1.0.0'/>
+      </provides>
+      <requires size='1'>
+        <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='0.0.0' multiple='true' greedy='false'/>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='4'>
+          <instruction key='install'>
+            installBundle(bundle:${artifact})
+          </instruction>
+          <instruction key='uninstall'>
+            uninstallBundle(bundle:${artifact})
+          </instruction>
+          <instruction key='unconfigure'>
+
+          </instruction>
+          <instruction key='configure'>
+            setStartLevel(startLevel:4);
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='jflex.feature.feature.jar' version='1.2.0'>
+      <update id='jflex.feature.feature.jar' range='[0.0.0,1.2.0)' severity='0'/>
+      <properties size='3'>
+        <property name='org.eclipse.equinox.p2.name' value='jflex feature'/>
+        <property name='org.eclipse.equinox.p2.description' value='This feature is an user interface for the jflex &#xA;framework for constructing lexical analyser.&#xA;It consists of four plugins, one hold the original jflex&#xA;sources, the other three contain a compiler and&#xA;an editor for JFlex grammar files.'/>
+        <property name='org.eclipse.equinox.p2.provider' value='michel.hassenforder@uha.fr'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='jflex.feature.feature.jar' version='1.2.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='jflex.feature' version='1.2.0'/>
+      </provides>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='org.eclipse.update.feature' id='jflex.feature' version='1.2.0'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+      <licenses size='1'>
+        <license uri='http://www.eclipse.org/legal/epl-v10.html' url='http://www.eclipse.org/legal/epl-v10.html'>
+          [Enter License Description here.]
+        </license>
+      </licenses>
+      <copyright>
+        Copyright (c) 2005-2007, Michel Hassenforder.
+      </copyright>
+    </unit>
+    <unit id='java_cup.eclipse.plugin' version='1.2.2.201004031947' singleton='false'>
+      <update id='java_cup.eclipse.plugin' range='[0.0.0,1.2.2.201004031947)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='java_cup V10M Plugin'/>
+        <property name='org.eclipse.equinox.p2.provider' value='michel.hassenforder@uha.fr'/>
+      </properties>
+      <provides size='6'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='java_cup.eclipse.plugin' version='1.2.2.201004031947'/>
+        <provided namespace='osgi.bundle' name='java_cup.eclipse.plugin' version='1.2.2.201004031947'/>
+        <provided namespace='java.package' name='.' version='0.0.0'/>
+        <provided namespace='java.package' name='java_cup' version='0.0.0'/>
+        <provided namespace='java.package' name='java_cup.runtime' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='java_cup.eclipse.plugin' version='1.2.2.201004031947'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-Vendor: michel.hassenforder@uha.fr&#xA;Bundle-ManifestVersion: 2&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.5&#xA;Bundle-ClassPath: java_cup.jar,java_cup.runtime.jar&#xA;Bundle-Name: java_cup V10M Plugin&#xA;Bundle-ActivationPolicy: lazy&#xA;Manifest-Version: 1.0&#xA;Bundle-SymbolicName: java_cup.eclipse.plugin&#xA;Bundle-Version: 1.2.2.201004031947&#xA;Eclipse-LazyStart: true&#xA;Export-Package: .,java_cup,java_cup.runtime
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='jflex.eclipse.doc' version='1.2.1'>
+      <update id='jflex.eclipse.doc' range='[0.0.0,1.2.1)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='jflex document Plug-in'/>
+        <property name='org.eclipse.equinox.p2.provider' value='michel.hassenforder@uha.fr'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='jflex.eclipse.doc' version='1.2.1'/>
+        <provided namespace='osgi.bundle' name='jflex.eclipse.doc' version='1.2.1'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='1'>
+        <required namespace='osgi.bundle' name='org.eclipse.help' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='jflex.eclipse.doc' version='1.2.1'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='2'>
+          <instruction key='manifest'>
+            Bundle-ManifestVersion: 2&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.5&#xA;Require-Bundle: org.eclipse.help&#xA;Manifest-Version: 1.0&#xA;Bundle-Version: 1.2.1&#xA;Bundle-SymbolicName: jflex.eclipse.doc; singleton:=true&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-Name: jflex document Plug-in&#xA;Bundle-Vendor: michel.hassenforder@uha.fr&#xA;Eclipse-LazyStart: true
+          </instruction>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='jflex.eclipse.ui' version='1.2.1'>
+      <update id='jflex.eclipse.ui' range='[0.0.0,1.2.1)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='jflex UI Plug-in'/>
+        <property name='org.eclipse.equinox.p2.provider' value='michel.hassenforder@uha.fr'/>
+      </properties>
+      <provides size='10'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='jflex.eclipse.ui' version='1.2.1'/>
+        <provided namespace='osgi.bundle' name='jflex.eclipse.ui' version='1.2.1'/>
+        <provided namespace='java.package' name='jflex.eclipse.ui' version='0.0.0'/>
+        <provided namespace='java.package' name='jflex.eclipse.ui.compiler.decorators' version='0.0.0'/>
+        <provided namespace='java.package' name='jflex.eclipse.ui.compiler.popup.actions' version='0.0.0'/>
+        <provided namespace='java.package' name='jflex.eclipse.ui.compiler.properties' version='0.0.0'/>
+        <provided namespace='java.package' name='jflex.eclipse.ui.editor' version='0.0.0'/>
+        <provided namespace='java.package' name='jflex.eclipse.ui.newWizards' version='0.0.0'/>
+        <provided namespace='java.package' name='jflex.eclipse.ui.preferences' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='10'>
+        <required namespace='osgi.bundle' name='jflex.eclipse.core' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.core' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.editors' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.ide' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.workbench.texteditor' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jface.text' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='jflex.eclipse.ui' version='1.2.1'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-Name: jflex UI Plug-in&#xA;Bundle-ClassPath: .&#xA;Bundle-Version: 1.2.1&#xA;Eclipse-LazyStart: true&#xA;Bundle-Activator: jflex.eclipse.ui.JFlex_UIPlugin&#xA;Bundle-Vendor: michel.hassenforder@uha.fr&#xA;Require-Bundle: jflex.eclipse.core,org.eclipse.core.resources,org.eclipse.core.runtime,org.eclipse.jdt.core,org.eclipse.jdt.ui,org.eclipse.ui,org.eclipse.ui.editors,org.eclipse.ui.ide,org.eclipse.ui.workbench.texteditor,org.eclipse.jface.text&#xA;Export-Package: jflex.eclipse.ui,jflex.eclipse.ui.compiler.decorators,jflex.eclipse.ui.compiler.popup.actions,jflex.eclipse.ui.compiler.properties,jflex.eclipse.ui.editor,jflex.eclipse.ui.newWizards,jflex.eclipse.ui.preferences&#xA;Bundle-SymbolicName: jflex.eclipse.ui; singleton:=true&#xA;Manifest-Version: 1.0&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-ManifestVersion: 2&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.5&#xA;Bundle-Localization: plugin
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='jflex.eclipse.core' version='1.2.0'>
+      <update id='jflex.eclipse.core' range='[0.0.0,1.2.0)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='jflex core Plug-in'/>
+        <property name='org.eclipse.equinox.p2.provider' value='michel.hassenforder@uha.fr'/>
+      </properties>
+      <provides size='6'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='jflex.eclipse.core' version='1.2.0'/>
+        <provided namespace='osgi.bundle' name='jflex.eclipse.core' version='1.2.0'/>
+        <provided namespace='java.package' name='jflex.eclipse.core' version='0.0.0'/>
+        <provided namespace='java.package' name='jflex.eclipse.core.builder' version='0.0.0'/>
+        <provided namespace='java.package' name='jflex.eclipse.core.internal' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='6'>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.team.core' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.core' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='jflex.eclipse.plugin' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='jflex.eclipse.core' version='1.2.0'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-RequiredExecutionEnvironment: J2SE-1.5&#xA;Bundle-Name: jflex core Plug-in&#xA;Bundle-Activator: jflex.eclipse.core.JFlex_CorePlugin&#xA;Manifest-Version: 1.0&#xA;Bundle-Vendor: michel.hassenforder@uha.fr&#xA;Bundle-ClassPath: .&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-SymbolicName: jflex.eclipse.core; singleton:=true&#xA;Bundle-ManifestVersion: 2&#xA;Eclipse-LazyStart: true&#xA;Bundle-Version: 1.2.0&#xA;Export-Package: jflex.eclipse.core,jflex.eclipse.core.builder,jflex.eclipse.core.internal&#xA;Require-Bundle: org.eclipse.core.runtime,org.eclipse.core.resources,org.eclipse.team.core,org.eclipse.jdt.core,org.eclipse.ui,jflex.eclipse.plugin
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='jflex.eclipse.core' version='1.2.1'>
+      <update id='jflex.eclipse.core' range='[0.0.0,1.2.1)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='jflex core Plug-in'/>
+        <property name='org.eclipse.equinox.p2.provider' value='michel.hassenforder@uha.fr'/>
+      </properties>
+      <provides size='6'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='jflex.eclipse.core' version='1.2.1'/>
+        <provided namespace='osgi.bundle' name='jflex.eclipse.core' version='1.2.1'/>
+        <provided namespace='java.package' name='jflex.eclipse.core' version='0.0.0'/>
+        <provided namespace='java.package' name='jflex.eclipse.core.builder' version='0.0.0'/>
+        <provided namespace='java.package' name='jflex.eclipse.core.internal' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='6'>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.team.core' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.core' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='jflex.eclipse.plugin' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='jflex.eclipse.core' version='1.2.1'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-RequiredExecutionEnvironment: J2SE-1.5&#xA;Bundle-Name: jflex core Plug-in&#xA;Bundle-Activator: jflex.eclipse.core.JFlex_CorePlugin&#xA;Manifest-Version: 1.0&#xA;Bundle-Vendor: michel.hassenforder@uha.fr&#xA;Bundle-ClassPath: .&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-SymbolicName: jflex.eclipse.core; singleton:=true&#xA;Bundle-ManifestVersion: 2&#xA;Eclipse-LazyStart: true&#xA;Bundle-Version: 1.2.1&#xA;Export-Package: jflex.eclipse.core,jflex.eclipse.core.builder,jflex.eclipse.core.internal&#xA;Require-Bundle: org.eclipse.core.runtime,org.eclipse.core.resources,org.eclipse.team.core,org.eclipse.jdt.core,org.eclipse.ui,jflex.eclipse.plugin
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='jflex.eclipse.ui' version='1.2.2.201004121533'>
+      <update id='jflex.eclipse.ui' range='[0.0.0,1.2.2.201004121533)' severity='0'/>
+      <properties size='3'>
+        <property name='org.eclipse.equinox.p2.name' value='jflex UI Plug-in'/>
+        <property name='org.eclipse.equinox.p2.provider' value='michel.hassenforder@uha.fr'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+      </properties>
+      <provides size='10'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='jflex.eclipse.ui' version='1.2.2.201004121533'/>
+        <provided namespace='osgi.bundle' name='jflex.eclipse.ui' version='1.2.2.201004121533'/>
+        <provided namespace='java.package' name='jflex.eclipse.ui' version='0.0.0'/>
+        <provided namespace='java.package' name='jflex.eclipse.ui.compiler.decorators' version='0.0.0'/>
+        <provided namespace='java.package' name='jflex.eclipse.ui.compiler.popup.actions' version='0.0.0'/>
+        <provided namespace='java.package' name='jflex.eclipse.ui.compiler.properties' version='0.0.0'/>
+        <provided namespace='java.package' name='jflex.eclipse.ui.editor' version='0.0.0'/>
+        <provided namespace='java.package' name='jflex.eclipse.ui.newWizards' version='0.0.0'/>
+        <provided namespace='java.package' name='jflex.eclipse.ui.preferences' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='10'>
+        <required namespace='osgi.bundle' name='jflex.eclipse.core' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.core' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.editors' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.ide' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.workbench.texteditor' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jface.text' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='jflex.eclipse.ui' version='1.2.2.201004121533'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-Name: jflex UI Plug-in&#xA;Bundle-ClassPath: .&#xA;Bundle-Version: 1.2.2.201004121533&#xA;Eclipse-LazyStart: true&#xA;Bundle-Activator: jflex.eclipse.ui.JFlex_UIPlugin&#xA;Bundle-Vendor: michel.hassenforder@uha.fr&#xA;Require-Bundle: jflex.eclipse.core,org.eclipse.core.resources,org.eclipse.core.runtime,org.eclipse.jdt.core,org.eclipse.jdt.ui,org.eclipse.ui,org.eclipse.ui.editors,org.eclipse.ui.ide,org.eclipse.ui.workbench.texteditor,org.eclipse.jface.text&#xA;Export-Package: jflex.eclipse.ui,jflex.eclipse.ui.compiler.decorators,jflex.eclipse.ui.compiler.popup.actions,jflex.eclipse.ui.compiler.properties,jflex.eclipse.ui.editor,jflex.eclipse.ui.newWizards,jflex.eclipse.ui.preferences&#xA;Bundle-SymbolicName: jflex.eclipse.ui; singleton:=true&#xA;Manifest-Version: 1.0&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-ManifestVersion: 2&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.5&#xA;Bundle-Localization: plugin
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='java_cup.eclipse.core' version='1.2.2.201004121533'>
+      <update id='java_cup.eclipse.core' range='[0.0.0,1.2.2.201004121533)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='java_cup core Plug-in'/>
+        <property name='org.eclipse.equinox.p2.provider' value='michel.hassenforder@uha.fr'/>
+      </properties>
+      <provides size='6'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='java_cup.eclipse.core' version='1.2.2.201004121533'/>
+        <provided namespace='osgi.bundle' name='java_cup.eclipse.core' version='1.2.2.201004121533'/>
+        <provided namespace='java.package' name='java_cup.eclipse.core' version='0.0.0'/>
+        <provided namespace='java.package' name='java_cup.eclipse.core.builder' version='0.0.0'/>
+        <provided namespace='java.package' name='java_cup.eclipse.core.internal' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='6'>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.team.core' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.core' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='java_cup.eclipse.plugin' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='java_cup.eclipse.core' version='1.2.2.201004121533'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-RequiredExecutionEnvironment: J2SE-1.5&#xA;Bundle-Name: java_cup core Plug-in&#xA;Bundle-Activator: java_cup.eclipse.core.Java_Cup_CorePlugin&#xA;Manifest-Version: 1.0&#xA;Bundle-Vendor: michel.hassenforder@uha.fr&#xA;Bundle-ClassPath: .&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-SymbolicName: java_cup.eclipse.core; singleton:=true&#xA;Bundle-ManifestVersion: 2&#xA;Eclipse-LazyStart: true&#xA;Bundle-Version: 1.2.2.201004121533&#xA;Export-Package: java_cup.eclipse.core,java_cup.eclipse.core.builder,java_cup.eclipse.core.internal&#xA;Require-Bundle: org.eclipse.core.runtime,org.eclipse.core.resources,org.eclipse.team.core,org.eclipse.jdt.core,org.eclipse.ui,java_cup.eclipse.plugin
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='jflex.feature.feature.group' version='1.2.0' singleton='false'>
+      <update id='jflex.feature.feature.group' range='[0.0.0,1.2.0)' severity='0'/>
+      <properties size='4'>
+        <property name='org.eclipse.equinox.p2.name' value='jflex feature'/>
+        <property name='org.eclipse.equinox.p2.description' value='This feature is an user interface for the jflex &#xA;framework for constructing lexical analyser.&#xA;It consists of four plugins, one hold the original jflex&#xA;sources, the other three contain a compiler and&#xA;an editor for JFlex grammar files.'/>
+        <property name='org.eclipse.equinox.p2.provider' value='michel.hassenforder@uha.fr'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='jflex.feature.feature.group' version='1.2.0'/>
+      </provides>
+      <requires size='5'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='jflex.eclipse.core' range='[1.2.0,1.2.0]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='jflex.eclipse.doc' range='[1.2.0,1.2.0]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='jflex.eclipse.plugin' range='[1.2.0,1.2.0]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='jflex.eclipse.ui' range='[1.2.0,1.2.0]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='jflex.feature.feature.jar' range='[1.2.0,1.2.0]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <licenses size='1'>
+        <license uri='http://www.eclipse.org/legal/epl-v10.html' url='http://www.eclipse.org/legal/epl-v10.html'>
+          [Enter License Description here.]
+        </license>
+      </licenses>
+      <copyright>
+        Copyright (c) 2005-2007, Michel Hassenforder.
+      </copyright>
+    </unit>
+    <unit id='jflex.eclipse.plugin' version='1.2.1' singleton='false'>
+      <update id='jflex.eclipse.plugin' range='[0.0.0,1.2.1)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='JFlex 1.4.2 Plug-in'/>
+        <property name='org.eclipse.equinox.p2.provider' value='michel.hassenforder@uha.fr'/>
+      </properties>
+      <provides size='5'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='jflex.eclipse.plugin' version='1.2.1'/>
+        <provided namespace='osgi.bundle' name='jflex.eclipse.plugin' version='1.2.1'/>
+        <provided namespace='java.package' name='JFlex' version='0.0.0'/>
+        <provided namespace='java.package' name='java_cup.runtime' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='jflex.eclipse.plugin' version='1.2.1'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-Vendor: michel.hassenforder@uha.fr&#xA;Bundle-ManifestVersion: 2&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.5&#xA;Bundle-ClassPath: jflex.jar&#xA;Bundle-Name: JFlex 1.4.2 Plug-in&#xA;Bundle-ActivationPolicy: lazy&#xA;Manifest-Version: 1.0&#xA;Bundle-SymbolicName: jflex.eclipse.plugin&#xA;Bundle-Version: 1.2.1&#xA;Eclipse-LazyStart: true&#xA;Export-Package: JFlex,java_cup.runtime
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='jflex.eclipse.doc' version='1.2.2.201004031947'>
+      <update id='jflex.eclipse.doc' range='[0.0.0,1.2.2.201004031947)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='jflex document Plug-in'/>
+        <property name='org.eclipse.equinox.p2.provider' value='michel.hassenforder@uha.fr'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='jflex.eclipse.doc' version='1.2.2.201004031947'/>
+        <provided namespace='osgi.bundle' name='jflex.eclipse.doc' version='1.2.2.201004031947'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='1'>
+        <required namespace='osgi.bundle' name='org.eclipse.help' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='jflex.eclipse.doc' version='1.2.2.201004031947'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='2'>
+          <instruction key='manifest'>
+            Bundle-ManifestVersion: 2&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.5&#xA;Require-Bundle: org.eclipse.help&#xA;Manifest-Version: 1.0&#xA;Bundle-Version: 1.2.2.201004031947&#xA;Bundle-SymbolicName: jflex.eclipse.doc; singleton:=true&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-Name: jflex document Plug-in&#xA;Bundle-Vendor: michel.hassenforder@uha.fr&#xA;Eclipse-LazyStart: true
+          </instruction>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='java_cup.feature.feature.group' version='1.2.2.201004121533' singleton='false'>
+      <update id='java_cup.feature.feature.group' range='[0.0.0,1.2.2.201004121533)' severity='0'/>
+      <properties size='4'>
+        <property name='org.eclipse.equinox.p2.name' value='java_cup feature'/>
+        <property name='org.eclipse.equinox.p2.description' value='This feature is an user interface for the Java_cup &#xA;framework for constructing compilers, and translators.&#xA;It consists of four plugins, one hold the original Java_cup&#xA;sources, the other three contain a compiler and&#xA;an editor for Java_cup grammar files.'/>
+        <property name='org.eclipse.equinox.p2.provider' value='michel.hassenforder@uha.fr'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='java_cup.feature.feature.group' version='1.2.2.201004121533'/>
+      </provides>
+      <requires size='5'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='java_cup.eclipse.plugin' range='[1.2.2.201004121533,1.2.2.201004121533]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='java_cup.eclipse.core' range='[1.2.2.201004121533,1.2.2.201004121533]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='java_cup.eclipse.doc' range='[1.2.2.201004121533,1.2.2.201004121533]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='java_cup.eclipse.ui' range='[1.2.2.201004121533,1.2.2.201004121533]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='java_cup.feature.feature.jar' range='[1.2.2.201004121533,1.2.2.201004121533]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <licenses size='1'>
+        <license uri='license.html' url='license.html'>
+          Unless otherwise stated, all Content made available by&#xA;Michel Hassenforder is provided to you under the terms and conditions&#xA;of the Common Public License Version 1.0 (CPL).&#xA;A copy of the CPL is provided with this Content and is also available&#xA;at http://www.eclipse.org/legal/cpl-v10.html.
+        </license>
+      </licenses>
+      <copyright>
+        Copyright (c) 2005-2007, Michel Hassenforder.
+      </copyright>
+    </unit>
+    <unit id='java_cup.feature.feature.group' version='1.2.2.201004031947' singleton='false'>
+      <update id='java_cup.feature.feature.group' range='[0.0.0,1.2.2.201004031947)' severity='0'/>
+      <properties size='4'>
+        <property name='org.eclipse.equinox.p2.name' value='java_cup feature'/>
+        <property name='org.eclipse.equinox.p2.description' value='This feature is an user interface for the Java_cup &#xA;framework for constructing compilers, and translators.&#xA;It consists of four plugins, one hold the original Java_cup&#xA;sources, the other three contain a compiler and&#xA;an editor for Java_cup grammar files.'/>
+        <property name='org.eclipse.equinox.p2.provider' value='michel.hassenforder@uha.fr'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='java_cup.feature.feature.group' version='1.2.2.201004031947'/>
+      </provides>
+      <requires size='5'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='java_cup.eclipse.plugin' range='[1.2.2.201004031947,1.2.2.201004031947]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='java_cup.eclipse.core' range='[1.2.2.201004031947,1.2.2.201004031947]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='java_cup.eclipse.doc' range='[1.2.2.201004031947,1.2.2.201004031947]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='java_cup.eclipse.ui' range='[1.2.2.201004031947,1.2.2.201004031947]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='java_cup.feature.feature.jar' range='[1.2.2.201004031947,1.2.2.201004031947]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <licenses size='1'>
+        <license uri='license.html' url='license.html'>
+          Unless otherwise stated, all Content made available by&#xA;Michel Hassenforder is provided to you under the terms and conditions&#xA;of the Common Public License Version 1.0 (CPL).&#xA;A copy of the CPL is provided with this Content and is also available&#xA;at http://www.eclipse.org/legal/cpl-v10.html.
+        </license>
+      </licenses>
+      <copyright>
+        Copyright (c) 2005-2007, Michel Hassenforder.
+      </copyright>
+    </unit>
+    <unit id='java_cup.eclipse.plugin' version='1.2.0' singleton='false'>
+      <update id='java_cup.eclipse.plugin' range='[0.0.0,1.2.0)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='java_cup V10M Plugin'/>
+        <property name='org.eclipse.equinox.p2.provider' value='michel.hassenforder@uha.fr'/>
+      </properties>
+      <provides size='6'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='java_cup.eclipse.plugin' version='1.2.0'/>
+        <provided namespace='osgi.bundle' name='java_cup.eclipse.plugin' version='1.2.0'/>
+        <provided namespace='java.package' name='.' version='0.0.0'/>
+        <provided namespace='java.package' name='java_cup' version='0.0.0'/>
+        <provided namespace='java.package' name='java_cup.runtime' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='java_cup.eclipse.plugin' version='1.2.0'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-Vendor: michel.hassenforder@uha.fr&#xA;Bundle-ManifestVersion: 2&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.5&#xA;Bundle-ClassPath: java_cup.jar,java_cup.runtime.jar&#xA;Bundle-Name: java_cup V10M Plugin&#xA;Bundle-ActivationPolicy: lazy&#xA;Manifest-Version: 1.0&#xA;Bundle-SymbolicName: java_cup.eclipse.plugin&#xA;Bundle-Version: 1.2.0&#xA;Eclipse-LazyStart: true&#xA;Export-Package: .,java_cup,java_cup.runtime
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='jflex.eclipse.doc' version='1.2.2.201004121533'>
+      <update id='jflex.eclipse.doc' range='[0.0.0,1.2.2.201004121533)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='jflex document Plug-in'/>
+        <property name='org.eclipse.equinox.p2.provider' value='michel.hassenforder@uha.fr'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='jflex.eclipse.doc' version='1.2.2.201004121533'/>
+        <provided namespace='osgi.bundle' name='jflex.eclipse.doc' version='1.2.2.201004121533'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='1'>
+        <required namespace='osgi.bundle' name='org.eclipse.help' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='jflex.eclipse.doc' version='1.2.2.201004121533'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='2'>
+          <instruction key='manifest'>
+            Bundle-ManifestVersion: 2&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.5&#xA;Require-Bundle: org.eclipse.help&#xA;Manifest-Version: 1.0&#xA;Bundle-Version: 1.2.2.201004121533&#xA;Bundle-SymbolicName: jflex.eclipse.doc; singleton:=true&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-Name: jflex document Plug-in&#xA;Bundle-Vendor: michel.hassenforder@uha.fr&#xA;Eclipse-LazyStart: true
+          </instruction>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='java_cup.feature.feature.group' version='1.2.0' singleton='false'>
+      <update id='java_cup.feature.feature.group' range='[0.0.0,1.2.0)' severity='0'/>
+      <properties size='4'>
+        <property name='org.eclipse.equinox.p2.name' value='java_cup feature'/>
+        <property name='org.eclipse.equinox.p2.description' value='This feature is an user interface for the Java_cup &#xA;framework for constructing compilers, and translators.&#xA;It consists of four plugins, one hold the original Java_cup&#xA;sources, the other three contain a compiler and&#xA;an editor for Java_cup grammar files.'/>
+        <property name='org.eclipse.equinox.p2.provider' value='michel.hassenforder@uha.fr'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='java_cup.feature.feature.group' version='1.2.0'/>
+      </provides>
+      <requires size='5'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='java_cup.eclipse.plugin' range='[1.2.0,1.2.0]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='java_cup.eclipse.core' range='[1.2.0,1.2.0]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='java_cup.eclipse.doc' range='[1.2.0,1.2.0]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='java_cup.eclipse.ui' range='[1.2.0,1.2.0]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='java_cup.feature.feature.jar' range='[1.2.0,1.2.0]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <licenses size='1'>
+        <license>
+          Unless otherwise stated, all Content made available by&#xA;Michel Hassenforder is provided to you under the terms and conditions&#xA;of the Common Public License Version 1.0 (CPL).&#xA;A copy of the CPL is provided with this Content and is also available&#xA;at http://www.eclipse.org/legal/cpl-v10.html.
+        </license>
+      </licenses>
+      <copyright>
+        Copyright (c) 2005-2007, Michel Hassenforder.
+      </copyright>
+    </unit>
+    <unit id='java_cup.eclipse.ui' version='1.2.1'>
+      <update id='java_cup.eclipse.ui' range='[0.0.0,1.2.1)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='java_cup UI Plug-in'/>
+        <property name='org.eclipse.equinox.p2.provider' value='michel.hassenforder@uha.fr'/>
+      </properties>
+      <provides size='10'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='java_cup.eclipse.ui' version='1.2.1'/>
+        <provided namespace='osgi.bundle' name='java_cup.eclipse.ui' version='1.2.1'/>
+        <provided namespace='java.package' name='java_cup.eclipse.ui' version='0.0.0'/>
+        <provided namespace='java.package' name='java_cup.eclipse.ui.compiler.decorators' version='0.0.0'/>
+        <provided namespace='java.package' name='java_cup.eclipse.ui.compiler.popup.actions' version='0.0.0'/>
+        <provided namespace='java.package' name='java_cup.eclipse.ui.compiler.properties' version='0.0.0'/>
+        <provided namespace='java.package' name='java_cup.eclipse.ui.editor' version='0.0.0'/>
+        <provided namespace='java.package' name='java_cup.eclipse.ui.newWizards' version='0.0.0'/>
+        <provided namespace='java.package' name='java_cup.eclipse.ui.preferences' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='10'>
+        <required namespace='osgi.bundle' name='java_cup.eclipse.core' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.core' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.editors' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.ide' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.workbench.texteditor' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jface.text' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='java_cup.eclipse.ui' version='1.2.1'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-Name: java_cup UI Plug-in&#xA;Bundle-ClassPath: .&#xA;Bundle-Version: 1.2.1&#xA;Eclipse-LazyStart: true&#xA;Bundle-Activator: java_cup.eclipse.ui.Java_Cup_UIPlugin&#xA;Bundle-Vendor: michel.hassenforder@uha.fr&#xA;Require-Bundle: java_cup.eclipse.core,org.eclipse.core.resources,org.eclipse.core.runtime,org.eclipse.jdt.core,org.eclipse.jdt.ui,org.eclipse.ui,org.eclipse.ui.editors,org.eclipse.ui.ide,org.eclipse.ui.workbench.texteditor,org.eclipse.jface.text&#xA;Export-Package: java_cup.eclipse.ui,java_cup.eclipse.ui.compiler.decorators,java_cup.eclipse.ui.compiler.popup.actions,java_cup.eclipse.ui.compiler.properties,java_cup.eclipse.ui.editor,java_cup.eclipse.ui.newWizards,java_cup.eclipse.ui.preferences&#xA;Bundle-SymbolicName: java_cup.eclipse.ui; singleton:=true&#xA;Manifest-Version: 1.0&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-ManifestVersion: 2&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.5&#xA;Bundle-Localization: plugin
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='jflex.feature.feature.jar' version='1.2.2.201004121533'>
+      <properties size='3'>
+        <property name='org.eclipse.equinox.p2.name' value='jflex feature'/>
+        <property name='org.eclipse.equinox.p2.description' value='This feature is an user interface for the jflex &#xA;framework for constructing lexical analyser.&#xA;It consists of four plugins, one hold the original jflex&#xA;sources, the other three contain a compiler and&#xA;an editor for JFlex grammar files.'/>
+        <property name='org.eclipse.equinox.p2.provider' value='michel.hassenforder@uha.fr'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='jflex.feature.feature.jar' version='1.2.2.201004121533'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='jflex.feature' version='1.2.2.201004121533'/>
+      </provides>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='org.eclipse.update.feature' id='jflex.feature' version='1.2.2.201004121533'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+      <licenses size='1'>
+        <license uri='http://www.eclipse.org/legal/epl-v10.html' url='http://www.eclipse.org/legal/epl-v10.html'>
+          [Enter License Description here.]
+        </license>
+      </licenses>
+      <copyright>
+        Copyright (c) 2005-2007, Michel Hassenforder.
+      </copyright>
+    </unit>
+    <unit id='java_cup.feature.feature.jar' version='1.2.1'>
+      <update id='java_cup.feature.feature.jar' range='[0.0.0,1.2.1)' severity='0'/>
+      <properties size='3'>
+        <property name='org.eclipse.equinox.p2.name' value='java_cup feature'/>
+        <property name='org.eclipse.equinox.p2.description' value='This feature is an user interface for the Java_cup &#xA;framework for constructing compilers, and translators.&#xA;It consists of four plugins, one hold the original Java_cup&#xA;sources, the other three contain a compiler and&#xA;an editor for Java_cup grammar files.'/>
+        <property name='org.eclipse.equinox.p2.provider' value='michel.hassenforder@uha.fr'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='java_cup.feature.feature.jar' version='1.2.1'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='java_cup.feature' version='1.2.1'/>
+      </provides>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='org.eclipse.update.feature' id='java_cup.feature' version='1.2.1'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+      <licenses size='1'>
+        <license>
+          Unless otherwise stated, all Content made available by&#xA;Michel Hassenforder is provided to you under the terms and conditions&#xA;of the Common Public License Version 1.0 (CPL).&#xA;A copy of the CPL is provided with this Content and is also available&#xA;at http://www.eclipse.org/legal/cpl-v10.html.
+        </license>
+      </licenses>
+      <copyright>
+        Copyright (c) 2005-2007, Michel Hassenforder.
+      </copyright>
+    </unit>
+    <unit id='java_cup.feature.feature.jar' version='1.2.2.201004121533'>
+      <properties size='3'>
+        <property name='org.eclipse.equinox.p2.name' value='java_cup feature'/>
+        <property name='org.eclipse.equinox.p2.description' value='This feature is an user interface for the Java_cup &#xA;framework for constructing compilers, and translators.&#xA;It consists of four plugins, one hold the original Java_cup&#xA;sources, the other three contain a compiler and&#xA;an editor for Java_cup grammar files.'/>
+        <property name='org.eclipse.equinox.p2.provider' value='michel.hassenforder@uha.fr'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='java_cup.feature.feature.jar' version='1.2.2.201004121533'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='java_cup.feature' version='1.2.2.201004121533'/>
+      </provides>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='org.eclipse.update.feature' id='java_cup.feature' version='1.2.2.201004121533'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+      <licenses size='1'>
+        <license uri='license.html' url='license.html'>
+          Unless otherwise stated, all Content made available by&#xA;Michel Hassenforder is provided to you under the terms and conditions&#xA;of the Common Public License Version 1.0 (CPL).&#xA;A copy of the CPL is provided with this Content and is also available&#xA;at http://www.eclipse.org/legal/cpl-v10.html.
+        </license>
+      </licenses>
+      <copyright>
+        Copyright (c) 2005-2007, Michel Hassenforder.
+      </copyright>
+    </unit>
+    <unit id='jflex.eclipse.ui' version='1.2.2.201004031947'>
+      <update id='jflex.eclipse.ui' range='[0.0.0,1.2.2.201004031947)' severity='0'/>
+      <properties size='3'>
+        <property name='org.eclipse.equinox.p2.name' value='jflex UI Plug-in'/>
+        <property name='org.eclipse.equinox.p2.provider' value='michel.hassenforder@uha.fr'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+      </properties>
+      <provides size='10'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='jflex.eclipse.ui' version='1.2.2.201004031947'/>
+        <provided namespace='osgi.bundle' name='jflex.eclipse.ui' version='1.2.2.201004031947'/>
+        <provided namespace='java.package' name='jflex.eclipse.ui' version='0.0.0'/>
+        <provided namespace='java.package' name='jflex.eclipse.ui.compiler.decorators' version='0.0.0'/>
+        <provided namespace='java.package' name='jflex.eclipse.ui.compiler.popup.actions' version='0.0.0'/>
+        <provided namespace='java.package' name='jflex.eclipse.ui.compiler.properties' version='0.0.0'/>
+        <provided namespace='java.package' name='jflex.eclipse.ui.editor' version='0.0.0'/>
+        <provided namespace='java.package' name='jflex.eclipse.ui.newWizards' version='0.0.0'/>
+        <provided namespace='java.package' name='jflex.eclipse.ui.preferences' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='10'>
+        <required namespace='osgi.bundle' name='jflex.eclipse.core' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.core' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.editors' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.ide' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.workbench.texteditor' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jface.text' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='jflex.eclipse.ui' version='1.2.2.201004031947'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-Name: jflex UI Plug-in&#xA;Bundle-ClassPath: .&#xA;Bundle-Version: 1.2.2.201004031947&#xA;Eclipse-LazyStart: true&#xA;Bundle-Activator: jflex.eclipse.ui.JFlex_UIPlugin&#xA;Bundle-Vendor: michel.hassenforder@uha.fr&#xA;Require-Bundle: jflex.eclipse.core,org.eclipse.core.resources,org.eclipse.core.runtime,org.eclipse.jdt.core,org.eclipse.jdt.ui,org.eclipse.ui,org.eclipse.ui.editors,org.eclipse.ui.ide,org.eclipse.ui.workbench.texteditor,org.eclipse.jface.text&#xA;Export-Package: jflex.eclipse.ui,jflex.eclipse.ui.compiler.decorators,jflex.eclipse.ui.compiler.popup.actions,jflex.eclipse.ui.compiler.properties,jflex.eclipse.ui.editor,jflex.eclipse.ui.newWizards,jflex.eclipse.ui.preferences&#xA;Bundle-SymbolicName: jflex.eclipse.ui; singleton:=true&#xA;Manifest-Version: 1.0&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-ManifestVersion: 2&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.5&#xA;Bundle-Localization: plugin
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='java_cup.feature.feature.group' version='1.2.1' singleton='false'>
+      <update id='java_cup.feature.feature.group' range='[0.0.0,1.2.1)' severity='0'/>
+      <properties size='4'>
+        <property name='org.eclipse.equinox.p2.name' value='java_cup feature'/>
+        <property name='org.eclipse.equinox.p2.description' value='This feature is an user interface for the Java_cup &#xA;framework for constructing compilers, and translators.&#xA;It consists of four plugins, one hold the original Java_cup&#xA;sources, the other three contain a compiler and&#xA;an editor for Java_cup grammar files.'/>
+        <property name='org.eclipse.equinox.p2.provider' value='michel.hassenforder@uha.fr'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='java_cup.feature.feature.group' version='1.2.1'/>
+      </provides>
+      <requires size='5'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='java_cup.eclipse.plugin' range='[1.2.1,1.2.1]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='java_cup.eclipse.core' range='[1.2.1,1.2.1]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='java_cup.eclipse.doc' range='[1.2.1,1.2.1]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='java_cup.eclipse.ui' range='[1.2.1,1.2.1]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='java_cup.feature.feature.jar' range='[1.2.1,1.2.1]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <licenses size='1'>
+        <license>
+          Unless otherwise stated, all Content made available by&#xA;Michel Hassenforder is provided to you under the terms and conditions&#xA;of the Common Public License Version 1.0 (CPL).&#xA;A copy of the CPL is provided with this Content and is also available&#xA;at http://www.eclipse.org/legal/cpl-v10.html.
+        </license>
+      </licenses>
+      <copyright>
+        Copyright (c) 2005-2007, Michel Hassenforder.
+      </copyright>
+    </unit>
+    <unit id='jflex.eclipse.plugin' version='1.2.2.201004121533' singleton='false'>
+      <update id='jflex.eclipse.plugin' range='[0.0.0,1.2.2.201004121533)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='JFlex 1.4.2 Plug-in'/>
+        <property name='org.eclipse.equinox.p2.provider' value='michel.hassenforder@uha.fr'/>
+      </properties>
+      <provides size='5'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='jflex.eclipse.plugin' version='1.2.2.201004121533'/>
+        <provided namespace='osgi.bundle' name='jflex.eclipse.plugin' version='1.2.2.201004121533'/>
+        <provided namespace='java.package' name='JFlex' version='0.0.0'/>
+        <provided namespace='java.package' name='java_cup.runtime' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='jflex.eclipse.plugin' version='1.2.2.201004121533'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-Vendor: michel.hassenforder@uha.fr&#xA;Bundle-ManifestVersion: 2&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.5&#xA;Bundle-ClassPath: jflex.jar&#xA;Bundle-Name: JFlex 1.4.2 Plug-in&#xA;Bundle-ActivationPolicy: lazy&#xA;Manifest-Version: 1.0&#xA;Bundle-SymbolicName: jflex.eclipse.plugin&#xA;Bundle-Version: 1.2.2.201004121533&#xA;Eclipse-LazyStart: true&#xA;Export-Package: JFlex,java_cup.runtime
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='a.jre' version='1.6.0' singleton='false'>
+      <provides size='117'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='a.jre' version='1.6.0'/>
+        <provided namespace='java.package' name='javax.accessibility' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.activity' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.crypto' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.crypto.interfaces' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.crypto.spec' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.imageio' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.imageio.event' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.imageio.metadata' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.imageio.plugins.bmp' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.imageio.plugins.jpeg' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.imageio.spi' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.imageio.stream' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.management' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.management.loading' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.management.modelmbean' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.management.monitor' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.management.openmbean' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.management.relation' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.management.remote' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.management.remote.rmi' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.management.timer' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.naming' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.naming.directory' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.naming.event' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.naming.ldap' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.naming.spi' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.net' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.net.ssl' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.print' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.print.attribute' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.print.attribute.standard' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.print.event' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.rmi' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.rmi.CORBA' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.rmi.ssl' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.security.auth' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.security.auth.callback' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.security.auth.kerberos' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.security.auth.login' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.security.auth.spi' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.security.auth.x500' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.security.cert' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.security.sasl' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.sound.midi' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.sound.midi.spi' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.sound.sampled' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.sound.sampled.spi' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.sql' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.sql.rowset' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.sql.rowset.serial' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.sql.rowset.spi' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.swing' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.swing.border' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.swing.colorchooser' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.swing.event' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.swing.filechooser' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.swing.plaf' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.swing.plaf.basic' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.swing.plaf.metal' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.swing.plaf.multi' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.swing.plaf.synth' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.swing.table' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.swing.text' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.swing.text.html' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.swing.text.html.parser' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.swing.text.rtf' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.swing.tree' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.swing.undo' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.transaction' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.transaction.xa' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.xml' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.xml.datatype' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.xml.namespace' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.xml.parsers' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.xml.transform' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.xml.transform.dom' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.xml.transform.sax' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.xml.transform.stream' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.xml.validation' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.xml.xpath' version='0.0.0'/>
+        <provided namespace='java.package' name='org.ietf.jgss' version='0.0.0'/>
+        <provided namespace='java.package' name='org.omg.CORBA' version='0.0.0'/>
+        <provided namespace='java.package' name='org.omg.CORBA_2_3' version='0.0.0'/>
+        <provided namespace='java.package' name='org.omg.CORBA_2_3.portable' version='0.0.0'/>
+        <provided namespace='java.package' name='org.omg.CORBA.DynAnyPackage' version='0.0.0'/>
+        <provided namespace='java.package' name='org.omg.CORBA.ORBPackage' version='0.0.0'/>
+        <provided namespace='java.package' name='org.omg.CORBA.portable' version='0.0.0'/>
+        <provided namespace='java.package' name='org.omg.CORBA.TypeCodePackage' version='0.0.0'/>
+        <provided namespace='java.package' name='org.omg.CosNaming' version='0.0.0'/>
+        <provided namespace='java.package' name='org.omg.CosNaming.NamingContextExtPackage' version='0.0.0'/>
+        <provided namespace='java.package' name='org.omg.CosNaming.NamingContextPackage' version='0.0.0'/>
+        <provided namespace='java.package' name='org.omg.Dynamic' version='0.0.0'/>
+        <provided namespace='java.package' name='org.omg.DynamicAny' version='0.0.0'/>
+        <provided namespace='java.package' name='org.omg.DynamicAny.DynAnyFactoryPackage' version='0.0.0'/>
+        <provided namespace='java.package' name='org.omg.DynamicAny.DynAnyPackage' version='0.0.0'/>
+        <provided namespace='java.package' name='org.omg.IOP' version='0.0.0'/>
+        <provided namespace='java.package' name='org.omg.IOP.CodecFactoryPackage' version='0.0.0'/>
+        <provided namespace='java.package' name='org.omg.IOP.CodecPackage' version='0.0.0'/>
+        <provided namespace='java.package' name='org.omg.Messaging' version='0.0.0'/>
+        <provided namespace='java.package' name='org.omg.PortableInterceptor' version='0.0.0'/>
+        <provided namespace='java.package' name='org.omg.PortableInterceptor.ORBInitInfoPackage' version='0.0.0'/>
+        <provided namespace='java.package' name='org.omg.PortableServer' version='0.0.0'/>
+        <provided namespace='java.package' name='org.omg.PortableServer.CurrentPackage' version='0.0.0'/>
+        <provided namespace='java.package' name='org.omg.PortableServer.POAManagerPackage' version='0.0.0'/>
+        <provided namespace='java.package' name='org.omg.PortableServer.POAPackage' version='0.0.0'/>
+        <provided namespace='java.package' name='org.omg.PortableServer.portable' version='0.0.0'/>
+        <provided namespace='java.package' name='org.omg.PortableServer.ServantLocatorPackage' version='0.0.0'/>
+        <provided namespace='java.package' name='org.omg.SendingContext' version='0.0.0'/>
+        <provided namespace='java.package' name='org.omg.stub.java.rmi' version='0.0.0'/>
+        <provided namespace='java.package' name='org.w3c.dom' version='0.0.0'/>
+        <provided namespace='java.package' name='org.w3c.dom.bootstrap' version='0.0.0'/>
+        <provided namespace='java.package' name='org.w3c.dom.events' version='0.0.0'/>
+        <provided namespace='java.package' name='org.w3c.dom.ls' version='0.0.0'/>
+        <provided namespace='java.package' name='org.xml.sax' version='0.0.0'/>
+        <provided namespace='java.package' name='org.xml.sax.ext' version='0.0.0'/>
+        <provided namespace='java.package' name='org.xml.sax.helpers' version='0.0.0'/>
+      </provides>
+      <touchpoint id='org.eclipse.equinox.p2.native' version='1.0.0'/>
+    </unit>
+    <unit id='compiler compiler' version='0.0.0.20100403194757'>
+      <properties size='3'>
+        <property name='org.eclipse.equinox.p2.name' value='jcup &amp; jflex'/>
+        <property name='org.eclipse.equinox.p2.description' value='Compiler compiler generator'/>
+        <property name='org.eclipse.equinox.p2.type.category' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='compiler compiler' version='0.0.0'/>
+      </provides>
+      <requires size='2'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='jflex.feature.feature.group' range='[1.2.2.201004031947,1.2.2.201004031947]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='java_cup.feature.feature.group' range='[1.2.2.201004031947,1.2.2.201004031947]'/>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+    </unit>
+    <unit id='tooling.org.eclipse.update.feature.default' version='1.0.0' singleton='false'>
+      <hostRequirements size='1'>
+        <required namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' range='0.0.0' optional='true' multiple='true' greedy='false'/>
+      </hostRequirements>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.type.fragment' value='true'/>
+      </properties>
+      <provides size='2'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='tooling.org.eclipse.update.feature.default' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.flavor' name='tooling' version='1.0.0'/>
+      </provides>
+      <requires size='1'>
+        <required namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' range='0.0.0' optional='true' multiple='true' greedy='false'/>
+      </requires>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <touchpoint id='null' version='0.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='2'>
+          <instruction key='install'>
+            installFeature(feature:${artifact},featureId:default,featureVersion:default)
+          </instruction>
+          <instruction key='uninstall'>
+            uninstallFeature(feature:${artifact},featureId:default,featureVersion:default)
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='jflex.eclipse.plugin' version='1.2.2.201004031947' singleton='false'>
+      <update id='jflex.eclipse.plugin' range='[0.0.0,1.2.2.201004031947)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='JFlex 1.4.2 Plug-in'/>
+        <property name='org.eclipse.equinox.p2.provider' value='michel.hassenforder@uha.fr'/>
+      </properties>
+      <provides size='5'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='jflex.eclipse.plugin' version='1.2.2.201004031947'/>
+        <provided namespace='osgi.bundle' name='jflex.eclipse.plugin' version='1.2.2.201004031947'/>
+        <provided namespace='java.package' name='JFlex' version='0.0.0'/>
+        <provided namespace='java.package' name='java_cup.runtime' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='jflex.eclipse.plugin' version='1.2.2.201004031947'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-Vendor: michel.hassenforder@uha.fr&#xA;Bundle-ManifestVersion: 2&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.5&#xA;Bundle-ClassPath: jflex.jar&#xA;Bundle-Name: JFlex 1.4.2 Plug-in&#xA;Bundle-ActivationPolicy: lazy&#xA;Manifest-Version: 1.0&#xA;Bundle-SymbolicName: jflex.eclipse.plugin&#xA;Bundle-Version: 1.2.2.201004031947&#xA;Eclipse-LazyStart: true&#xA;Export-Package: JFlex,java_cup.runtime
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='jflex.feature.feature.jar' version='1.2.2.201004031947'>
+      <properties size='3'>
+        <property name='org.eclipse.equinox.p2.name' value='jflex feature'/>
+        <property name='org.eclipse.equinox.p2.description' value='This feature is an user interface for the jflex &#xA;framework for constructing lexical analyser.&#xA;It consists of four plugins, one hold the original jflex&#xA;sources, the other three contain a compiler and&#xA;an editor for JFlex grammar files.'/>
+        <property name='org.eclipse.equinox.p2.provider' value='michel.hassenforder@uha.fr'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='jflex.feature.feature.jar' version='1.2.2.201004031947'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='jflex.feature' version='1.2.2.201004031947'/>
+      </provides>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='org.eclipse.update.feature' id='jflex.feature' version='1.2.2.201004031947'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+      <licenses size='1'>
+        <license uri='http://www.eclipse.org/legal/epl-v10.html' url='http://www.eclipse.org/legal/epl-v10.html'>
+          [Enter License Description here.]
+        </license>
+      </licenses>
+      <copyright>
+        Copyright (c) 2005-2007, Michel Hassenforder.
+      </copyright>
+    </unit>
+    <unit id='java_cup.eclipse.core' version='1.2.1'>
+      <update id='java_cup.eclipse.core' range='[0.0.0,1.2.1)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='java_cup core Plug-in'/>
+        <property name='org.eclipse.equinox.p2.provider' value='michel.hassenforder@uha.fr'/>
+      </properties>
+      <provides size='6'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='java_cup.eclipse.core' version='1.2.1'/>
+        <provided namespace='osgi.bundle' name='java_cup.eclipse.core' version='1.2.1'/>
+        <provided namespace='java.package' name='java_cup.eclipse.core' version='0.0.0'/>
+        <provided namespace='java.package' name='java_cup.eclipse.core.builder' version='0.0.0'/>
+        <provided namespace='java.package' name='java_cup.eclipse.core.internal' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='6'>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.team.core' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.core' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='java_cup.eclipse.plugin' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='java_cup.eclipse.core' version='1.2.1'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-RequiredExecutionEnvironment: J2SE-1.5&#xA;Bundle-Name: java_cup core Plug-in&#xA;Bundle-Activator: java_cup.eclipse.core.Java_Cup_CorePlugin&#xA;Manifest-Version: 1.0&#xA;Bundle-Vendor: michel.hassenforder@uha.fr&#xA;Bundle-ClassPath: .&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-SymbolicName: java_cup.eclipse.core; singleton:=true&#xA;Bundle-ManifestVersion: 2&#xA;Eclipse-LazyStart: true&#xA;Bundle-Version: 1.2.1&#xA;Export-Package: java_cup.eclipse.core,java_cup.eclipse.core.builder,java_cup.eclipse.core.internal&#xA;Require-Bundle: org.eclipse.core.runtime,org.eclipse.core.resources,org.eclipse.team.core,org.eclipse.jdt.core,org.eclipse.ui,java_cup.eclipse.plugin
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='config.a.jre' version='1.6.0' singleton='false'>
+      <hostRequirements size='1'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='a.jre' range='1.6.0'/>
+      </hostRequirements>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.type.fragment' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='config.a.jre' version='1.6.0'/>
+      </provides>
+      <requires size='1'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='a.jre' range='1.6.0'/>
+      </requires>
+      <touchpoint id='org.eclipse.equinox.p2.native' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='install'>
+
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='java_cup.eclipse.ui' version='1.2.0'>
+      <update id='java_cup.eclipse.ui' range='[0.0.0,1.2.0)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='java_cup UI Plug-in'/>
+        <property name='org.eclipse.equinox.p2.provider' value='michel.hassenforder@uha.fr'/>
+      </properties>
+      <provides size='10'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='java_cup.eclipse.ui' version='1.2.0'/>
+        <provided namespace='osgi.bundle' name='java_cup.eclipse.ui' version='1.2.0'/>
+        <provided namespace='java.package' name='java_cup.eclipse.ui' version='0.0.0'/>
+        <provided namespace='java.package' name='java_cup.eclipse.ui.compiler.decorators' version='0.0.0'/>
+        <provided namespace='java.package' name='java_cup.eclipse.ui.compiler.popup.actions' version='0.0.0'/>
+        <provided namespace='java.package' name='java_cup.eclipse.ui.compiler.properties' version='0.0.0'/>
+        <provided namespace='java.package' name='java_cup.eclipse.ui.editor' version='0.0.0'/>
+        <provided namespace='java.package' name='java_cup.eclipse.ui.newWizards' version='0.0.0'/>
+        <provided namespace='java.package' name='java_cup.eclipse.ui.preferences' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='10'>
+        <required namespace='osgi.bundle' name='java_cup.eclipse.core' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.core' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.editors' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.ide' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.workbench.texteditor' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jface.text' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='java_cup.eclipse.ui' version='1.2.0'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-Name: java_cup UI Plug-in&#xA;Bundle-ClassPath: .&#xA;Bundle-Version: 1.2.0&#xA;Eclipse-LazyStart: true&#xA;Bundle-Activator: java_cup.eclipse.ui.Java_Cup_UIPlugin&#xA;Bundle-Vendor: michel.hassenforder@uha.fr&#xA;Require-Bundle: java_cup.eclipse.core,org.eclipse.core.resources,org.eclipse.core.runtime,org.eclipse.jdt.core,org.eclipse.jdt.ui,org.eclipse.ui,org.eclipse.ui.editors,org.eclipse.ui.ide,org.eclipse.ui.workbench.texteditor,org.eclipse.jface.text&#xA;Export-Package: java_cup.eclipse.ui,java_cup.eclipse.ui.compiler.decorators,java_cup.eclipse.ui.compiler.popup.actions,java_cup.eclipse.ui.compiler.properties,java_cup.eclipse.ui.editor,java_cup.eclipse.ui.newWizards,java_cup.eclipse.ui.preferences&#xA;Bundle-SymbolicName: java_cup.eclipse.ui; singleton:=true&#xA;Manifest-Version: 1.0&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-ManifestVersion: 2&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.5&#xA;Bundle-Localization: plugin
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='java_cup.eclipse.ui' version='1.2.2.201004121533'>
+      <update id='java_cup.eclipse.ui' range='[0.0.0,1.2.2.201004121533)' severity='0'/>
+      <properties size='3'>
+        <property name='org.eclipse.equinox.p2.name' value='java_cup UI Plug-in'/>
+        <property name='org.eclipse.equinox.p2.provider' value='michel.hassenforder@uha.fr'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+      </properties>
+      <provides size='10'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='java_cup.eclipse.ui' version='1.2.2.201004121533'/>
+        <provided namespace='osgi.bundle' name='java_cup.eclipse.ui' version='1.2.2.201004121533'/>
+        <provided namespace='java.package' name='java_cup.eclipse.ui' version='0.0.0'/>
+        <provided namespace='java.package' name='java_cup.eclipse.ui.compiler.decorators' version='0.0.0'/>
+        <provided namespace='java.package' name='java_cup.eclipse.ui.compiler.popup.actions' version='0.0.0'/>
+        <provided namespace='java.package' name='java_cup.eclipse.ui.compiler.properties' version='0.0.0'/>
+        <provided namespace='java.package' name='java_cup.eclipse.ui.editor' version='0.0.0'/>
+        <provided namespace='java.package' name='java_cup.eclipse.ui.newWizards' version='0.0.0'/>
+        <provided namespace='java.package' name='java_cup.eclipse.ui.preferences' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='10'>
+        <required namespace='osgi.bundle' name='java_cup.eclipse.core' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.core' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.editors' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.ide' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.workbench.texteditor' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jface.text' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='java_cup.eclipse.ui' version='1.2.2.201004121533'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-Name: java_cup UI Plug-in&#xA;Bundle-ClassPath: .&#xA;Bundle-Version: 1.2.2.201004121533&#xA;Eclipse-LazyStart: true&#xA;Bundle-Activator: java_cup.eclipse.ui.Java_Cup_UIPlugin&#xA;Bundle-Vendor: michel.hassenforder@uha.fr&#xA;Require-Bundle: java_cup.eclipse.core,org.eclipse.core.resources,org.eclipse.core.runtime,org.eclipse.jdt.core,org.eclipse.jdt.ui,org.eclipse.ui,org.eclipse.ui.editors,org.eclipse.ui.ide,org.eclipse.ui.workbench.texteditor,org.eclipse.jface.text&#xA;Export-Package: java_cup.eclipse.ui,java_cup.eclipse.ui.compiler.decorators,java_cup.eclipse.ui.compiler.popup.actions,java_cup.eclipse.ui.compiler.properties,java_cup.eclipse.ui.editor,java_cup.eclipse.ui.newWizards,java_cup.eclipse.ui.preferences&#xA;Bundle-SymbolicName: java_cup.eclipse.ui; singleton:=true&#xA;Manifest-Version: 1.0&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-ManifestVersion: 2&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.5&#xA;Bundle-Localization: plugin
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='java_cup.eclipse.plugin' version='1.2.2.201004121533' singleton='false'>
+      <update id='java_cup.eclipse.plugin' range='[0.0.0,1.2.2.201004121533)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='java_cup V10M Plugin'/>
+        <property name='org.eclipse.equinox.p2.provider' value='michel.hassenforder@uha.fr'/>
+      </properties>
+      <provides size='6'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='java_cup.eclipse.plugin' version='1.2.2.201004121533'/>
+        <provided namespace='osgi.bundle' name='java_cup.eclipse.plugin' version='1.2.2.201004121533'/>
+        <provided namespace='java.package' name='.' version='0.0.0'/>
+        <provided namespace='java.package' name='java_cup' version='0.0.0'/>
+        <provided namespace='java.package' name='java_cup.runtime' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='java_cup.eclipse.plugin' version='1.2.2.201004121533'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-Vendor: michel.hassenforder@uha.fr&#xA;Bundle-ManifestVersion: 2&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.5&#xA;Bundle-ClassPath: java_cup.jar,java_cup.runtime.jar&#xA;Bundle-Name: java_cup V10M Plugin&#xA;Bundle-ActivationPolicy: lazy&#xA;Manifest-Version: 1.0&#xA;Bundle-SymbolicName: java_cup.eclipse.plugin&#xA;Bundle-Version: 1.2.2.201004121533&#xA;Eclipse-LazyStart: true&#xA;Export-Package: .,java_cup,java_cup.runtime
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='jflex.eclipse.doc' version='1.2.0'>
+      <update id='jflex.eclipse.doc' range='[0.0.0,1.2.0)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='jflex document Plug-in'/>
+        <property name='org.eclipse.equinox.p2.provider' value='michel.hassenforder@uha.fr'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='jflex.eclipse.doc' version='1.2.0'/>
+        <provided namespace='osgi.bundle' name='jflex.eclipse.doc' version='1.2.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='1'>
+        <required namespace='osgi.bundle' name='org.eclipse.help' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='jflex.eclipse.doc' version='1.2.0'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='2'>
+          <instruction key='manifest'>
+            Bundle-ManifestVersion: 2&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.5&#xA;Require-Bundle: org.eclipse.help&#xA;Manifest-Version: 1.0&#xA;Bundle-Version: 1.2.0&#xA;Bundle-SymbolicName: jflex.eclipse.doc; singleton:=true&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-Name: jflex document Plug-in&#xA;Bundle-Vendor: michel.hassenforder@uha.fr&#xA;Eclipse-LazyStart: true
+          </instruction>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+  </units>
+</repository>

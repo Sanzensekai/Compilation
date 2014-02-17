@@ -33,7 +33,7 @@ parser code {:
 :}
 
 terminal			EOLN;
-terminal			CREATE_T, DESCRIBE, START, FINISH, ;
+terminal			CREATE_T, DESCRIBE, START, FINISH, LABELLED;
 
 terminal String		NAME, LABEL, DATE, DESCRIPTION;
 terminal			UPLUS, UMINUS;

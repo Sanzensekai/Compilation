@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/java_cup.feature_1.2.2.201004121533.jar" id="java_cup.feature" version="1.2.2.201004121533">
+      <category name="compiler compiler"/>
+   </feature>
+   <feature url="features/jflex.feature_1.2.2.201004121533.jar" id="jflex.feature" version="1.2.2.201004121533">
+      <category name="compiler compiler"/>
+   </feature>
+   <category-def name="compiler compiler" label="jcup &amp; jflex">
+      <description>
+         Compiler compiler generator
+      </description>
+   </category-def>
+</site>

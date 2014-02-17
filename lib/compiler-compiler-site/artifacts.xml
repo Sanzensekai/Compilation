@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<repository name='${p2.artifact.repo.name}' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1.0.0'>
+  <properties size='2'>
+    <property name='p2.compressed' value='false'/>
+    <property name='p2.timestamp' value='1271079256181'/>
+  </properties>
+  <mappings size='3'>
+    <rule filter='(&amp; (classifier=osgi.bundle))' output='${repoUrl}/plugins/${id}_${version}.jar'/>
+    <rule filter='(&amp; (classifier=binary))' output='${repoUrl}/binary/${id}_${version}'/>
+    <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
+  </mappings>
+  <artifacts size='30'>
+    <artifact classifier='org.eclipse.update.feature' id='java_cup.feature' version='1.2.1'>
+      <properties size='2'>
+        <property name='artifact.size' value='15456'/>
+        <property name='download.size' value='15456'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='java_cup.eclipse.plugin' version='1.2.0'>
+      <properties size='3'>
+        <property name='artifact.size' value='92217'/>
+        <property name='download.size' value='92217'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='java_cup.eclipse.ui' version='1.2.0'>
+      <properties size='3'>
+        <property name='artifact.size' value='69858'/>
+        <property name='download.size' value='69858'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='java_cup.eclipse.core' version='1.2.2.201004121533'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='30571'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='java_cup.eclipse.doc' version='1.2.1'>
+      <properties size='3'>
+        <property name='artifact.size' value='1088308'/>
+        <property name='download.size' value='1088308'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='jflex.feature' version='1.2.0'>
+      <properties size='2'>
+        <property name='artifact.size' value='15319'/>
+        <property name='download.size' value='15319'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='java_cup.eclipse.plugin' version='1.2.1'>
+      <properties size='3'>
+        <property name='artifact.size' value='92361'/>
+        <property name='download.size' value='92361'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='jflex.eclipse.plugin' version='1.2.2.201004121533'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='204811'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='jflex.eclipse.plugin' version='1.2.0'>
+      <properties size='3'>
+        <property name='artifact.size' value='204783'/>
+        <property name='download.size' value='204783'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='jflex.eclipse.doc' version='1.2.1'>
+      <properties size='3'>
+        <property name='artifact.size' value='1099492'/>
+        <property name='download.size' value='1099492'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='jflex.eclipse.doc' version='1.2.2.201004121533'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='1099714'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='jflex.eclipse.plugin' version='1.2.1'>
+      <properties size='3'>
+        <property name='artifact.size' value='204752'/>
+        <property name='download.size' value='204752'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='java_cup.feature' version='1.2.2.201004121533'>
+      <properties size='2'>
+        <property name='download.contentType' value='application/zip'/>
+        <property name='download.size' value='15209'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='java_cup.eclipse.ui' version='1.2.1'>
+      <properties size='3'>
+        <property name='artifact.size' value='69966'/>
+        <property name='download.size' value='69966'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='java_cup.eclipse.plugin' version='1.2.2.201004121533'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='5120839'/>
+      </properties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='jflex.feature' version='1.2.1'>
+      <properties size='2'>
+        <property name='artifact.size' value='15320'/>
+        <property name='download.size' value='15320'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='jflex.eclipse.core' version='1.2.1'>
+      <properties size='3'>
+        <property name='artifact.size' value='27927'/>
+        <property name='download.size' value='27927'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='java_cup.eclipse.core' version='1.2.1'>
+      <properties size='3'>
+        <property name='artifact.size' value='30149'/>
+        <property name='download.size' value='30149'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='jflex.eclipse.core' version='1.2.0'>
+      <properties size='3'>
+        <property name='artifact.size' value='27926'/>
+        <property name='download.size' value='27926'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='java_cup.eclipse.core' version='1.2.0'>
+      <properties size='3'>
+        <property name='artifact.size' value='30148'/>
+        <property name='download.size' value='30148'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='jflex.eclipse.ui' version='1.2.2.201004121533'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='48667'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='jflex.eclipse.doc' version='1.2.0'>
+      <properties size='3'>
+        <property name='artifact.size' value='1099496'/>
+        <property name='download.size' value='1099496'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='jflex.eclipse.core' version='1.2.2.201004121533'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='28350'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='java_cup.eclipse.doc' version='1.2.2.201004121533'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='1088530'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='java_cup.eclipse.doc' version='1.2.0'>
+      <properties size='3'>
+        <property name='artifact.size' value='1088312'/>
+        <property name='download.size' value='1088312'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='java_cup.eclipse.ui' version='1.2.2.201004121533'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='75639'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='jflex.eclipse.ui' version='1.2.0'>
+      <properties size='3'>
+        <property name='artifact.size' value='47775'/>
+        <property name='download.size' value='47775'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='java_cup.feature' version='1.2.0'>
+      <properties size='2'>
+        <property name='artifact.size' value='15515'/>
+        <property name='download.size' value='15515'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='jflex.eclipse.ui' version='1.2.1'>
+      <properties size='3'>
+        <property name='artifact.size' value='47778'/>
+        <property name='download.size' value='47778'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='jflex.feature' version='1.2.2.201004121533'>
+      <properties size='2'>
+        <property name='download.contentType' value='application/zip'/>
+        <property name='download.size' value='15071'/>
+      </properties>
+    </artifact>
+  </artifacts>
+</repository>

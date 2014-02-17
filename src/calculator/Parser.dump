@@ -4,8 +4,8 @@
 
 ===== Terminals =====
 [0]EOF [1]error [2]EOLN [3]CREATE_T [4]DESCRIBE 
-[5]START [6]FINISH [7]NAME [8]LABEL [9]DATE 
-[10]DESCRIPTION [11]UPLUS [12]UMINUS 
+[5]START [6]FINISH [7]LABELLED [8]NAME [9]LABEL 
+[10]DATE [11]DESCRIPTION [12]UPLUS [13]UMINUS 
 
 ===== Non terminals =====
 [0]list [1]instr [2]date [3]expr 
@@ -19,7 +19,205 @@
 [5] expr ::= DESCRIBE NAME DESCRIPTION 
 [6] expr ::= START NAME DATE 
 [7] expr ::= FINISH NAME DATE 
-[8] expr ::= NAME LABEL 
+[8] expr ::= LABELLED NAME LABEL 
 ===== Viable Prefix Recognizer =====
-null
-null
+START lalr_state [0]: {
+  [list ::= (*) list instr EOLN , {EOF CREATE_T DESCRIBE START FINISH LABELLED }]
+  [$START ::= (*) list EOF , {EOF }]
+  [list ::= (*) , {EOF CREATE_T DESCRIBE START FINISH LABELLED }]
+}
+transition on list to state [1]
+
+-------------------
+lalr_state [1]: {
+  [expr ::= (*) LABELLED NAME LABEL , {EOLN }]
+  [expr ::= (*) DESCRIBE NAME DESCRIPTION , {EOLN }]
+  [list ::= list (*) instr EOLN , {EOF CREATE_T DESCRIBE START FINISH LABELLED }]
+  [expr ::= (*) FINISH NAME DATE , {EOLN }]
+  [expr ::= (*) CREATE_T NAME , {EOLN }]
+  [$START ::= list (*) EOF , {EOF }]
+  [expr ::= (*) START NAME DATE , {EOLN }]
+  [instr ::= (*) expr , {EOLN }]
+}
+transition on START to state [9]
+transition on EOF to state [8]
+transition on LABELLED to state [7]
+transition on expr to state [6]
+transition on CREATE_T to state [5]
+transition on DESCRIBE to state [4]
+transition on instr to state [3]
+transition on FINISH to state [2]
+
+-------------------
+lalr_state [2]: {
+  [expr ::= FINISH (*) NAME DATE , {EOLN }]
+}
+transition on NAME to state [18]
+
+-------------------
+lalr_state [3]: {
+  [list ::= list instr (*) EOLN , {EOF CREATE_T DESCRIBE START FINISH LABELLED }]
+}
+transition on EOLN to state [17]
+
+-------------------
+lalr_state [4]: {
+  [expr ::= DESCRIBE (*) NAME DESCRIPTION , {EOLN }]
+}
+transition on NAME to state [15]
+
+-------------------
+lalr_state [5]: {
+  [expr ::= CREATE_T (*) NAME , {EOLN }]
+}
+transition on NAME to state [14]
+
+-------------------
+lalr_state [6]: {
+  [instr ::= expr (*) , {EOLN }]
+}
+
+-------------------
+lalr_state [7]: {
+  [expr ::= LABELLED (*) NAME LABEL , {EOLN }]
+}
+transition on NAME to state [12]
+
+-------------------
+lalr_state [8]: {
+  [$START ::= list EOF (*) , {EOF }]
+}
+
+-------------------
+lalr_state [9]: {
+  [expr ::= START (*) NAME DATE , {EOLN }]
+}
+transition on NAME to state [10]
+
+-------------------
+lalr_state [10]: {
+  [expr ::= START NAME (*) DATE , {EOLN }]
+}
+transition on DATE to state [11]
+
+-------------------
+lalr_state [11]: {
+  [expr ::= START NAME DATE (*) , {EOLN }]
+}
+
+-------------------
+lalr_state [12]: {
+  [expr ::= LABELLED NAME (*) LABEL , {EOLN }]
+}
+transition on LABEL to state [13]
+
+-------------------
+lalr_state [13]: {
+  [expr ::= LABELLED NAME LABEL (*) , {EOLN }]
+}
+
+-------------------
+lalr_state [14]: {
+  [expr ::= CREATE_T NAME (*) , {EOLN }]
+}
+
+-------------------
+lalr_state [15]: {
+  [expr ::= DESCRIBE NAME (*) DESCRIPTION , {EOLN }]
+}
+transition on DESCRIPTION to state [16]
+
+-------------------
+lalr_state [16]: {
+  [expr ::= DESCRIBE NAME DESCRIPTION (*) , {EOLN }]
+}
+
+-------------------
+lalr_state [17]: {
+  [list ::= list instr EOLN (*) , {EOF CREATE_T DESCRIBE START FINISH LABELLED }]
+}
+
+-------------------
+lalr_state [18]: {
+  [expr ::= FINISH NAME (*) DATE , {EOLN }]
+}
+transition on DATE to state [19]
+
+-------------------
+lalr_state [19]: {
+  [expr ::= FINISH NAME DATE (*) , {EOLN }]
+}
+
+-------------------
+-------- ACTION_TABLE --------
+From state #0
+ [term 0:REDUCE(with prod 0)] [term 3:REDUCE(with prod 0)]
+ [term 4:REDUCE(with prod 0)] [term 5:REDUCE(with prod 0)]
+ [term 6:REDUCE(with prod 0)] [term 7:REDUCE(with prod 0)]
+From state #1
+ [term 0:SHIFT(to state 8)] [term 3:SHIFT(to state 5)]
+ [term 4:SHIFT(to state 4)] [term 5:SHIFT(to state 9)]
+ [term 6:SHIFT(to state 2)] [term 7:SHIFT(to state 7)]
+From state #2
+ [term 8:SHIFT(to state 18)]
+From state #3
+ [term 2:SHIFT(to state 17)]
+From state #4
+ [term 8:SHIFT(to state 15)]
+From state #5
+ [term 8:SHIFT(to state 14)]
+From state #6
+ [term 2:REDUCE(with prod 3)]
+From state #7
+ [term 8:SHIFT(to state 12)]
+From state #8
+ [term 0:REDUCE(with prod 1)]
+From state #9
+ [term 8:SHIFT(to state 10)]
+From state #10
+ [term 10:SHIFT(to state 11)]
+From state #11
+ [term 2:REDUCE(with prod 6)]
+From state #12
+ [term 9:SHIFT(to state 13)]
+From state #13
+ [term 2:REDUCE(with prod 8)]
+From state #14
+ [term 2:REDUCE(with prod 4)]
+From state #15
+ [term 11:SHIFT(to state 16)]
+From state #16
+ [term 2:REDUCE(with prod 5)]
+From state #17
+ [term 0:REDUCE(with prod 2)] [term 3:REDUCE(with prod 2)]
+ [term 4:REDUCE(with prod 2)] [term 5:REDUCE(with prod 2)]
+ [term 6:REDUCE(with prod 2)] [term 7:REDUCE(with prod 2)]
+From state #18
+ [term 10:SHIFT(to state 19)]
+From state #19
+ [term 2:REDUCE(with prod 7)]
+------------------------------
+-------- REDUCE_TABLE --------
+From state #0
+ [non term 0->state 1]
+From state #1
+ [non term 1->state 3] [non term 3->state 6]
+From state #2
+From state #3
+From state #4
+From state #5
+From state #6
+From state #7
+From state #8
+From state #9
+From state #10
+From state #11
+From state #12
+From state #13
+From state #14
+From state #15
+From state #16
+From state #17
+From state #18
+From state #19
+-----------------------------
